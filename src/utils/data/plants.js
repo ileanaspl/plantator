@@ -104,8 +104,8 @@ const plantes = [
                 }
             ],
             partieUtil: "Tiges et feuilles",
-            proprietes: "émollient et astringeant",
-            indicationsTrad: "ballonement, spasmes digestifs, allaitement",
+            proprietes: "Émollient et astringent, anti-inflammatoire, diurétique",
+            indicationsTrad: "En interne : Colites, inflammations intestinales, diarrhées, hyperplasie bégnine de la prostate, cystites et inflammations du système urinaire. ",
             geolocX: 1,
             geolocY: 2,
         },
@@ -130,6 +130,7 @@ const plantes = [
                     disposition: "grappes",
                 }
             ],
+            proprietes: "Hautement toxique, certaines molécules comme la dioxine sont utilisées dans certains médicaments à des dosages infimes pour soulager certaines affections cardiaques.",
             geolocX: 1,
             geolocY: 2,
         },
