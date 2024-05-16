@@ -1,4 +1,4 @@
-export const prout = {
+export const geoloc_city = {
   type: "FeatureCollection",
   features: [
     {

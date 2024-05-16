@@ -1,16 +1,16 @@
 import Globe from "react-globe.gl";
 import { useEffect, useState } from "react";
-import { prout } from "./prout";
+import { geoloc_city } from "../utils/data/geoloc_city";
 import { useRef } from "react";
 import * as THREE from "three";
-import cloud from "./clouds.png";
+import cloud from "../assets/textures/clouds.png";
 
 function GreenGlobe() {
   const [places, setPlaces] = useState([]);
   const globeEl = useRef();
 
   useEffect(() => {
-    setPlaces(prout.features);
+    setPlaces(geoloc_city.features);
     const globe = globeEl.current;
 
     // Auto-rotate
