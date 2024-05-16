@@ -5,7 +5,7 @@ const plantes = [
 			vernaculaire: 'Anis vert',
 			scientifique: 'Pimpinella anisum',
 		},
-		img: '../../assets/anis_vert.jpg',
+		img: 'http://www.fr36.org/plantes/anis-vert.webp',
 		famille: 'Apiacées',
 		feuille: {
 			folioles: 'composées',
@@ -42,7 +42,7 @@ const plantes = [
 			vernaculaire: 'Millepertuis perforé',
 			scientifique: 'Hypericum perforatum',
 		},
-		img: '../../assets/plantes/millepertuis-perfore.jpg',
+		img: 'http://www.fr36.org/plantes/millepertuis-perfore.webp',
 		famille: 'Apiacées',
 		feuille: {
 			folioles: 'simples',
@@ -80,7 +80,7 @@ const plantes = [
 			vernaculaire: 'Mauve sylvestre',
 			scientifique: 'Malva sylvestris',
 		},
-		img: '../../assets/plantes/mauve-sylvestre.jpg',
+		img: 'http://www.fr36.org/plantes/mauve-sylvestre.webp',
 		famille: 'Malvaceae',
 		feuille: {
 			folioles: 'simples',
@@ -118,7 +118,7 @@ const plantes = [
 			vernaculaire: 'Chicorée sauvage',
 			scientifique: 'Cichorium intybus',
 		},
-		img: '../../assets/plantes/chicoree-sauvage.jpg',
+		img: 'http://www.fr36.org/plantes/chicoree-sauvage.webp',
 		famille: 'Asteraceae',
 		feuille: {
 			folioles: 'simples',
@@ -155,7 +155,7 @@ const plantes = [
 			vernaculaire: 'Achillée millefeuille',
 			scientifique: 'Achillea millefolium',
 		},
-		img: '../../assets/plantes/achille-millefolium.jpg',
+		img: 'http://www.fr36.org/plantes/achille-millefeuille.webp',
 		famille: 'Asteraceae',
 		feuille: {
 			folioles: 'simple',
@@ -193,7 +193,7 @@ const plantes = [
 			vernaculaire: 'Grande aunée',
 			scientifique: 'Inula helenium',
 		},
-		img: '../../assets/plantes/grande-aunee.jpg',
+		img: 'http://www.fr36.org/plantes/grande-aunee.webp',
 		famille: 'Asteraceae',
 		feuille: {
 			folioles: 'simples',
@@ -231,7 +231,7 @@ const plantes = [
 			vernaculaire: 'Epilobe à petite fleur',
 			scientifique: 'Epilobium parviflorum',
 		},
-		img: '../../assets/plantes/epilobe-a-petites-fleurs.jpg',
+		img: 'http://www.fr36.org/plantes/epilobe-a-petites-fleurs.webp',
 		famille: 'Oenotheraceae',
 		feuille: {
 			folioles: 'simple',
@@ -270,7 +270,7 @@ const plantes = [
 			scientifique: 'Eschscholzia californica',
 		},
 
-		img: '../../assets/plantes/pavot-de-californie.jpg',
+		img: 'http://www.fr36.org/plantes/pavot-de-californie.webp',
 		famille: 'Papaveraceae',
 		feuille: {
 			folioles: 'composées',
@@ -307,7 +307,7 @@ const plantes = [
 			vernaculaire: 'Digitale pourpre',
 			scientifique: 'Digitalis purpurea',
 		},
-		img: '../../assets/plantes/digitale-pourpre.jpg',
+		img: 'http://www.fr36.org/plantes/digitale-pourpre.webp',
 		famille: 'Scrophulariaceae',
 		feuille: {
 			folioles: 'simple',
@@ -342,7 +342,7 @@ const plantes = [
 			vernaculaire: 'Bourrache officinale',
 			scientifique: 'Borago officinalis',
 		},
-		img: '../../assets/plantes/bourrache-officinale.jpg',
+		img: 'http://www.fr36.org/plantes/bourrache-officinale.webp',
 		famille: 'Boraginaceae',
 		feuille: {
 			folioles: 'simple',
