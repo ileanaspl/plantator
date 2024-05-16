@@ -21,6 +21,9 @@ const plantes = [
                     disposition: "ombelles"
                 }
             ],
+            partieUtil: "semence",
+            proprietes: "carmminative, antispasmodique intestinale, galactogène",
+            indicationsTrad: "ballonement, spasmes digestifs, allaitement",
             geolocX: 1,
             geolocY: 2,
         },
@@ -45,6 +48,9 @@ const plantes = [
                     disposition: "corymbes"
                 }
             ],
+            partieUtil: "Sommités fleuries",
+            proprietes: "Hémostatique, emménagogue, antispasmodique et décongestionante",
+            indicationsTrad: "En infusion : soulagement des spasmes digestifs et menstruels, réduire les saignements trop abondants lors des règles. En externe : stopper les saignements (plaies, coupures)",
             geolocX: 1,
             geolocY: 2,
         },
@@ -69,6 +75,9 @@ const plantes = [
                     disposition: "capitules",
                 }
             ],
+            partieUtil: "Racine",
+            proprietes: "Bronchodilatatrice, expectorante, prébiotque, choléretique, cholagogue, diurétique",
+            indicationsTrad: "En interne : encombrement des poumons, infections des bronches ou des poumons, ralentissement des fonctions d'éliminations de l'organisme",
             geolocX: 1,
             geolocY: 2,
         },
@@ -94,6 +103,9 @@ const plantes = [
                     petale: "4"
                 }
             ],
+            partieUtil: "Tiges et feuilles",
+            proprietes: "émollient et astringeant",
+            indicationsTrad: "ballonement, spasmes digestifs, allaitement",
             geolocX: 1,
             geolocY: 2,
         },
