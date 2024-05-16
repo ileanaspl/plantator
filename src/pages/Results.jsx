@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import GreenGlobe from "../components/GreenGlobe";
 
 function Results() {
   return (
@@ -6,6 +7,8 @@ function Results() {
       RESULTS
       <br />
       <Link to={`/`}>Go to Home</Link>
+      <br />
+      <GreenGlobe />
     </div>
   );
 }
