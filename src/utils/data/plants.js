@@ -35,6 +35,7 @@ export const plantes = [
         lng: 79.13492152021523,
       },
     ],
+    labelcolor: "rgba(52, 46,55, 0.75)",
   },
   {
     id: 2,
@@ -73,6 +74,7 @@ export const plantes = [
         lng: 33.94589843155854,
       },
     ],
+    labelcolor: "rgba(255, 177,0, 0.75)",
   },
   {
     id: 3,
@@ -111,6 +113,7 @@ export const plantes = [
         lng: 10.934475952907745,
       },
     ],
+    labelcolor: "rgba(255, 83,255, 0.75)",
   },
   {
     id: 4,
@@ -149,6 +152,7 @@ export const plantes = [
         lng: 3.6047242366849535,
       },
     ],
+    labelcolor: "rgba(0, 83,255, 0.75)",
   },
   {
     id: 5,
@@ -187,6 +191,7 @@ export const plantes = [
         lng: -98.48060747644661,
       },
     ],
+    labelcolor: "rgba(0, 56,68, 0.75)",
   },
   {
     id: 6,
@@ -226,6 +231,7 @@ export const plantes = [
         lng: 23.926877506771856,
       },
     ],
+    labelcolor: "rgba(0, 255,44, 0.75)",
   },
   {
     id: 7,
@@ -264,6 +270,7 @@ export const plantes = [
         lng: -104.54323474930759,
       },
     ],
+    labelcolor: "rgba(255, 0,29, 0.75)",
   },
   {
     id: 8,
@@ -302,6 +309,7 @@ export const plantes = [
         lng: -1.0310700212915667,
       },
     ],
+    labelcolor: "rgba(255, 86,0, 0.75)",
   },
   {
     id: 9,
@@ -337,6 +345,7 @@ export const plantes = [
         lng: 17.564975436381882,
       },
     ],
+    labelcolor: "rgba(224, 142,238, 0.75)",
   },
   {
     id: 10,
@@ -376,5 +385,6 @@ export const plantes = [
         lng: 34.67979414159286,
       },
     ],
+    labelcolor: "rgba(28, 0,247, 0.75)",
   },
 ];
