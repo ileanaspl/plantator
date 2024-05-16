@@ -1,4 +1,4 @@
-const plantes = [
+export const plantes = [
   {
     id: 1,
     nom: {
