@@ -85,13 +85,13 @@ function GreenGlobe() {
       {console.log(places[0])}
       {hoveredLabel && (
         <img
-          src={places[0]?.img} // Utilisez votre image de marqueur ici
+          src={places[1]?.img} // Utilisez votre image de marqueur ici
           alt="Marker"
           style={{
             position: "absolute",
             left: " 70%",
             top: " 30%",
-            width: "300px",
+            width: "350px",
             // height: "50px",
             zIndex: 9999,
           }}
