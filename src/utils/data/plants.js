@@ -129,7 +129,7 @@ export const plantes = [
     fleur: {
       couleur: "bleues",
       disposition: "panicules",
-      petale: "> 15",
+      petale: "supérieur à 15",
     },
     partieUtil: "Racines",
     proprietes: "Choléretique et cholagogue, apéritive, prébiotique",
