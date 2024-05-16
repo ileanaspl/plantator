@@ -83,7 +83,7 @@ const plantes = [
 			],
 			fleur: [
 				{
-					couleur: 'violette',
+					couleur: 'mauves',
 					disposition: 'fascicules',
 					petale: '5',
 				},
