@@ -1,0 +1,45 @@
+#root {
+  --darker-color: #242424;
+  --darker-colorTransparent: #242424c5;
+  --lighter-color: #fff;
+  --text-color: #8eb533;
+
+  width: 100dvw;
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.home {
+  margin: 0 auto;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  color: #8eb533;
+  background-image: url("./assets/textures/ayako-GZpKVHIEjy4-unsplash.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 5dvh;
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+}
+
+.link {
+  border: 1px solid #8eb533;
+  border-radius: 6px;
+  background-color: var(--darker-colorTransparent);
+  color: var(--lighter-color);
+  padding: 1rem;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
