@@ -3,7 +3,7 @@ import { surveyData } from '../utils/data/surveydatas.js';
 import { useContext } from 'react';
 import { SurveyContext } from '../utils/context/SurveyContext.jsx';
 import { div } from 'three/examples/jsm/nodes/Nodes.js';
-import './Survey.sass';
+import './Survey.scss';
 
 function Survey() {
 	const { questionNumber } = useParams();
@@ -18,11 +18,11 @@ function Survey() {
 	}
 
 	return (
-		<div>
+		<div id="survey-div">
 			{console.log(answers)}
 			SURVEY page - {questionNumber}
 			<br />
-			Question : <p>{surveyData[questionNumber - 1].question}</p>
+			<p>Question: {surveyData[questionNumber - 1].question}</p>
 			<br />
 			<br />
 			<br />
@@ -31,11 +31,13 @@ function Survey() {
 			<Link to={`/`}>Go to Home</Link>
 			<br />
 			<div id="grandcontainer">
-				<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseA)}>
-					<p>{surveyData[questionNumber - 1].reponseA}</p>
-					<br />
-					<img src={surveyData[questionNumber - 1].imageA} />
-				</Link>
+				<div className="grandcontainer-a">
+					<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseA)}>
+						<p>{surveyData[questionNumber - 1].reponseA}</p>
+						<br />
+						<img src={surveyData[questionNumber - 1].imageA} />
+					</Link>
+				</div>
 				<div className="grandcontainer-a">
 					<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseB)}>
 						<p>{surveyData[questionNumber - 1].reponseB}</p>
