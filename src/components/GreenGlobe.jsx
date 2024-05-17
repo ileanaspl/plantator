@@ -8,34 +8,46 @@ import cloud from "../assets/textures/clouds.png";
 import { plantes } from "../utils/data/plants.js";
 
 function GreenGlobe({ datas }) {
-  const [places, setPlaces] = useState(plantsLoc);
+  const [places, setPlaces] = useState([]);
   const [hoveredLabel, setHoveredLabel] = useState(null);
   const [animationPaused, setAnimationPaused] = useState(false);
   const globeEl = useRef();
 
   useEffect(() => {
+    if (!datas || datas.length === 0) {
+      console.error("Datas is empty or undefined");
+      return;
+    }
     // Construire les données des étiquettes avec toutes les coordonnées
-    const labelsData = plantsLoc.flatMap((plant) =>
-      plant.coordonnees.map((coord) => ({
+    const labelsData = datas?.flatMap((plant) =>
+      plant?.coordonnees?.map((coord) => ({
         ...plant,
         coordonnees: coord,
       })),
     );
     setPlaces(labelsData);
-    const globe = globeEl.current;
+  }, [datas]);
 
+  useEffect(() => {
+    const globe = globeEl.current;
     // Auto-rotate
     globe.controls().autoRotate = true;
     globe.controls().autoRotateSpeed = 0.1;
 
     // Center the view on the specified coordinates
-    const centerCoords = {
-      lat: places[0]?.coordonnees[0]?.lat,
-      lng: places[0]?.coordonnees[0]?.lng,
-      altitude: 2,
-    };
-    globe.pointOfView(centerCoords, 0);
+    if (places.length > 0) {
+      // Center the view on the specified coordinates
+      const centerCoords = {
+        lat: places[0].coordonnees.lat,
+        lng: places[0].coordonnees.lng,
+        altitude: 2,
+      };
+      globe.pointOfView(centerCoords, 0);
+    }
+  }, [places]);
 
+  useEffect(() => {
+    const globe = globeEl.current;
     // Add clouds sphere
     const CLOUDS_IMG_URL = cloud; // from https://github.com/turban/webgl-earth
     const CLOUDS_ALT = 0.001;
@@ -89,8 +101,8 @@ function GreenGlobe({ datas }) {
     <>
       <div style={{ position: "absolute", zIndex: 1000 }}>
         {animationPaused ? "Rotation en pause" : ""}
-        {console.log(places)}
       </div>
+
       <Globe
         ref={globeEl}
         animateIn={true}
@@ -114,6 +126,7 @@ function GreenGlobe({ datas }) {
         }}
         onLabelClick={toggleAnimation}
       />
+
       {hoveredLabel && (
         <img
           src={hoveredLabel.img}

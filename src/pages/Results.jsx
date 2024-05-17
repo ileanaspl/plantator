@@ -24,7 +24,7 @@ function Results() {
       <Link to={`/`}>Go to Home</Link>
       <br />
       <DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
-      <GreenGlobe datas={datas} />
+      {datas && <GreenGlobe datas={datas} />}
     </div>
   );
 }
