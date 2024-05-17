@@ -1,3 +1,7 @@
+#root {
+    min-height: 80dvh;
+}
+
 #survey-div {
     color: var(--text-color);
     text-align: center;
@@ -7,6 +11,7 @@
     justify-content: center;
     align-content: center;
     color: var(--lighter-color);
+    gap: 32px;
 
     h3 {
         margin: 1rem;
@@ -19,13 +24,14 @@
     button:hover {
         color: var(--text-color);
     }
+
     #grandcontainer {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
-    
+
         .grandcontainer-a {
             border: 1px solid var(--text-color);
             border-radius: 6px;
@@ -38,25 +44,24 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-    
+
         .grandcontainer-a:hover {
-            background-color:  rgba($color: #8eb533, $alpha: 0.05);
+            background-color: rgba($color: #8eb533, $alpha: 0.05);
             color: var(--text-color);
         }
-    
+
         img {
             width: 3rem;
         }
-    
+
         p {
             color: var(--lighter-color);
         }
-    
     }
+
     @media screen and (min-width: 464px) {
         h3 {
             margin-bottom: 5rem;
         }
     }
 }
-

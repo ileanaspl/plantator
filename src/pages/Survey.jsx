@@ -82,8 +82,6 @@ function Survey() {
 					</div>
 				)}
 			</div>
-			<br />
-			<br />
 			<Link to={`/survey/${prevQuestionNumber}`} id="prev-button">
 				<button onClick={saveReply}>Précédent</button>
 			</Link>
