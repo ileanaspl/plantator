@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.scss";
+import { Link } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="home">
+      <h1>PLANTATOR</h1>
+      <div className="mainContainer">
+        <div className="homeText">
+          <h2>Qu'est-ce que Plantator ?</h2>
+          <p>
+            Plantator est un site web vous permettant d'identifier une plante que vous rencontrez
+            lors de vos balades en forêt, montagne ou simplement dans votre jardin.
+          </p>
+          <br></br>
+          <p>Vous avez la possibilité de procéder à cette identification de deux façons :</p>
+          <p>
+            À l'aide d'une suite de questions, comme si vous utilisiez une flore en faisant appel à
+            des clefs de determination de botanique.
+          </p>
+          <p>Grâce à une photo que vous avez pris de la plante.</p>
+        </div>
+        <div className="nav">
+          <Link to={`survey/1`} className="link">
+            Identification par questions
+          </Link>
+          <Link to={`img-identification`} className="link">
+            Identification par photo
+          </Link>
+          <Link to={`results`} className="link">
+            Voir la carte
+          </Link>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

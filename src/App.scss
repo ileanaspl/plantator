@@ -1,0 +1,77 @@
+#root {
+  --darker-color: #242424;
+  --darker-colorTransparent: rgba(36, 36, 36, 0.773);
+  --lighter-color: #fff;
+  --text-color: #8eb533;
+  box-sizing: border-box;
+  width: 100dvw;
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+
+.home {
+  margin: 0 auto;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  color: var(--text-color);
+  background-image: url("./assets/textures/homeBg.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 5dvh;
+
+  .mainContainer {
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .homeText {
+    max-width: 65ch;
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+
+    p {
+      color: var(--lighter-color);
+    }
+  }
+
+  h1 {
+    font-weight: 400;
+    margin-bottom: 5dvh;
+  }
+
+  .nav {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .link {
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    background-color: var(--darker-colorTransparent);
+    color: var(--lighter-color);
+    padding: 1rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: var(--text-color);
+
+    }
+  }
+
+}
