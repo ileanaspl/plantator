@@ -5,8 +5,9 @@ import { plantsLoc } from "../utils/data/plantsLoc.js";
 import { useRef } from "react";
 import * as THREE from "three";
 import cloud from "../assets/textures/clouds.png";
+import { plantes } from "../utils/data/plants.js";
 
-function GreenGlobe() {
+function GreenGlobe({ datas }) {
   const [places, setPlaces] = useState(plantsLoc);
   const [hoveredLabel, setHoveredLabel] = useState(null);
   const [animationPaused, setAnimationPaused] = useState(false);
@@ -88,6 +89,7 @@ function GreenGlobe() {
     <>
       <div style={{ position: "absolute", zIndex: 1000 }}>
         {animationPaused ? "Rotation en pause" : ""}
+        {console.log(places)}
       </div>
       <Globe
         ref={globeEl}
