@@ -47,19 +47,17 @@ function Results() {
 		<div>
 			RESULTS
 			<br />
-			{datas.length >= 1 && winningPlant !== '' && (
+			{datas.length >= 1 && answers[1] && winningPlant !== '' && (
 				<h2>
 					{winningPlant === 'nowinner'
 						? 'Aucune plante ne correspond à vos critères'
 						: `La plante qui correspond à vos critères est la ${winningPlant} `}
 				</h2>
 			)}
+			{selectedPlants !== '' && <h3>Plante recherchée : {selectedPlants}</h3>}
 			<br />
-			<Link to={`/`}>Go to Home</Link>
+			<Link to={`/`}>Retour à l'accueil</Link>
 			<br />
-			{/* {datas.length === 1 && (
-        <button onClick={() => setSelectedPlants("")}>Voir toutes les plantes</button>
-      )} */}
 			<DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
 			{datas && <GreenGlobe datas={datas} />}
 		</div>
