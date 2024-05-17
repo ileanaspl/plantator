@@ -8,14 +8,15 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/anis-vert.webp",
     famille: "Apiacées",
     feuille: {
-      folioles: "composées",
-      decoupe: "dentées",
-      disposition: "alternées",
+      folioles: "Composées",
+      decoupe: "Dentées",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "blanche",
-      disposition: "ombelles",
+      couleur: "Blanc",
+      disposition: "Ombelles",
+      petale: "Supérieur à 15",
     },
 
     partieUtil: "Semences",
@@ -46,14 +47,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/millepertuis-perfore.webp",
     famille: "Apiacées",
     feuille: {
-      folioles: "simples",
-      decoupe: "lisses",
-      disposition: "opposées",
+      folioles: "Simples",
+      decoupe: "Lisses",
+      disposition: "Opposées",
     },
 
     fleur: {
-      couleur: "jaunes",
-      disposition: "panicules",
+      couleur: "Jaune",
+      disposition: "Panicules",
       petale: "5",
     },
     partieUtil: "Sommités fleuries",
@@ -85,14 +86,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/mauve-sylvestre.webp",
     famille: "Malvaceae",
     feuille: {
-      folioles: "simples",
-      decoupe: "dentées",
-      disposition: "verticillées",
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Verticillées",
     },
 
     fleur: {
-      couleur: "violette",
-      disposition: "fascicules",
+      couleur: "Violet",
+      disposition: "Fascicules",
       petale: "5",
     },
     partieUtil: "Fleurs",
@@ -124,15 +125,15 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/chicoree-sauvage.webp",
     famille: "Asteraceae",
     feuille: {
-      folioles: "simples",
-      decoupe: "dentées",
-      disposition: "alternées",
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "bleues",
-      disposition: "panicules",
-      petale: "supérieur à 15",
+      couleur: "Bleu",
+      disposition: "Panicules",
+      petale: "Supérieur à 15",
     },
     partieUtil: "Racines",
     proprietes: "Choléretique et cholagogue, apéritive, prébiotique",
@@ -163,14 +164,15 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/achille-millefeuille.webp",
     famille: "Asteraceae",
     feuille: {
-      folioles: "simple",
-      decoupe: "pennées",
-      disposition: "alternées",
+      folioles: "Simples",
+      decoupe: "Pennées",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "blanches",
-      disposition: "corymbes",
+      couleur: "Blanc",
+      disposition: "Corymbes",
+      petale: "5",
     },
 
     partieUtil: "Sommités fleuries",
@@ -202,14 +204,15 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/grande-aunee.webp",
     famille: "Asteraceae",
     feuille: {
-      folioles: "simples",
-      decoupe: "dentées",
-      disposition: "alternées",
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "jaunes",
-      disposition: "capitules",
+      couleur: "Jaune",
+      disposition: "Capitules",
+      petale: "Supérieur à 15",
     },
 
     partieUtil: "Racine",
@@ -242,14 +245,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/epilobe-a-petites-fleurs.webp",
     famille: "Oenotheraceae",
     feuille: {
-      folioles: "simple",
-      decoupe: "dentées",
-      disposition: "opposées",
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Opposées",
     },
 
     fleur: {
-      couleur: "jaunes",
-      disposition: "capitules",
+      couleur: "Jaune",
+      disposition: "Capitules",
       petale: "4",
     },
 
@@ -282,14 +285,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/pavot-de-californie.webp",
     famille: "Papaveraceae",
     feuille: {
-      folioles: "composées",
-      decoupe: "lisses",
-      disposition: "alternées",
+      folioles: "Composées",
+      decoupe: "Lisses",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "oranges",
-      disposition: "isolées",
+      couleur: "Orange",
+      disposition: "Isolées",
       petale: "4",
     },
     partieUtil: "Parties aériennes fleuries",
@@ -320,14 +323,15 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/digitale-pourpre.webp",
     famille: "Scrophulariaceae",
     feuille: {
-      folioles: "simple",
-      decoupe: "dentées",
-      disposition: "alternées",
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "rose",
-      disposition: "grappes",
+      couleur: "Rose",
+      disposition: "Grappes",
+      petale: "5",
     },
     proprietes:
       "Plante extrêmement toxique ! Certains de ses principes actifs comme la dioxine sont utilisés à des dosages infimes dans des médicaments comme cardiotonique",
@@ -356,14 +360,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/bourrache-officinale.webp",
     famille: "Boraginaceae",
     feuille: {
-      folioles: "simple",
-      decoupe: "poilues",
-      disposition: "alternées",
+      folioles: "Simples",
+      decoupe: "Poilues",
+      disposition: "Alternées",
     },
 
     fleur: {
-      couleur: "bleues",
-      disposition: "panicules",
+      couleur: "Bleu",
+      disposition: "Panicules",
       petale: "5",
     },
     partieUtil: "Graines (huile)",
