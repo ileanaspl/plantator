@@ -1,5 +1,5 @@
 import "ai-taxonomist";
-import "./imgIdentification.scss";
+import "./ImgIdentification.scss";
 import { Link } from "react-router-dom";
 
 function ImgIdentification() {
