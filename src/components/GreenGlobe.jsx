@@ -132,14 +132,16 @@ function GreenGlobe({ datas }) {
           position: "absolute",
           left: "70%",
           top: "30%",
+          backgroundColor: "rgba(36, 36, 36, 0.673)",
+          maxWidth: "350px",
+          paddingBottom: "1rem",
+          borderRadius: "8px",
         }}>
           <img
             src={hoveredLabel.img}
             alt={hoveredLabel.nom.vernaculaire}
             style={{
               position: "relative",
-              // left: " 70%",
-              // top: " 30%",
               width: "350px",
               height: "350px",
               zIndex: 9999,
@@ -147,17 +149,21 @@ function GreenGlobe({ datas }) {
               borderRadius: "8px 8px 0 0",
             }}
           />
-          <h3>{hoveredLabel.nom.vernaculaire}</h3>
-          <p><i>{hoveredLabel.nom.scientifique}</i></p>
-          <p style={{
-            maxWidth: "350px",
-          }}><b>Parties utilisées : </b>{hoveredLabel.partieUtil}</p>
-          <p style={{
-            maxWidth: "350px",
-          }}><b>Vertus : </b>{hoveredLabel.proprietes}</p>
-          <p style={{
-            maxWidth: "350px",
-          }}><b>Indications traditionnelles : </b>{hoveredLabel.indicationsTrad}</p>
+          <div style={{
+            paddingLeft: "1rem",
+          }}>
+            <h3>{hoveredLabel.nom.vernaculaire}</h3>
+            <p><i>{hoveredLabel.nom.scientifique}</i></p>
+            <p style={{
+              maxWidth: "350px",
+            }}><b>Parties utilisées : </b>{hoveredLabel.partieUtil}</p>
+            <p style={{
+              maxWidth: "350px",
+            }}><b>Vertus : </b>{hoveredLabel.proprietes}</p>
+            <p style={{
+              maxWidth: "350px",
+            }}><b>Indications traditionnelles : </b>{hoveredLabel.indicationsTrad}</p>
+          </div>
         </div>
       )}
     </>
