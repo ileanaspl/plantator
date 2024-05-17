@@ -24,7 +24,7 @@
   align-items: center;
   gap: 2rem;
   color: var(--text-color);
-  background-image: url("./assets/textures/ayako-GZpKVHIEjy4-unsplash.png");
+  background-image: url("./assets/textures/homeBg.png");
   background-position: center;
   background-size: cover;
   padding-top: 5dvh;
@@ -60,16 +60,15 @@
     justify-content: center;
   }
 
-}
-
-.link {
-  border: 1px solid var(--text-color);
-  border-radius: 6px;
-  background-color: var(--darker-colorTransparent);
-  color: var(--lighter-color);
-  padding: 1rem;
-  width: 16rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .link {
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    background-color: var(--darker-colorTransparent);
+    color: var(--lighter-color);
+    padding: 1rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
