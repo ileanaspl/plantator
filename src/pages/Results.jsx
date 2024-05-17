@@ -10,12 +10,9 @@ function Results() {
 	const [selectedPlants, setSelectedPlants] = useState('');
 	const [datas, setDatas] = useState([]);
 	const { answers } = useContext(SurveyContext);
-
-	useEffect(() => {
-		const resultSurvey = makeResults();
-		resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
-	}, [selectedPlants]);
-
+	// const changePlants = () => {
+	// 	return plantes.filter((obj) => (selectedPlants !== '' ? obj.nom.vernaculaire === selectedPlants : obj));
+	// };
 	const makeResults = () => {
 		return plantes.filter(
 			(obj) =>
@@ -27,6 +24,11 @@ function Results() {
 				obj.fleur.petale === answers[6],
 		);
 	};
+	useEffect(() => {
+		const resultSurvey = makeResults();
+		resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
+	}, [selectedPlants]);
+
 
 	return (
 		<div>

@@ -4,14 +4,6 @@ import { plantes } from "../utils/data/plants";
 
 function DropdownSelectorPlants({ setSelectedPlants }) {
   useEffect(() => { }, []);
-  const changePlants = () => {
-    return plantes.filter((obj) => (selectedPlants !== '' ? obj.nom.vernaculaire === selectedPlants : obj));
-  };
-
-  useEffect(() => {
-    setDatas(changePlants());
-  }, [selectedPlants]);
-
   return (
     <div className="dropdown-menu">
       <i className="fi fi-rr-settings-sliders" />
