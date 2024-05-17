@@ -17,6 +17,7 @@ function App() {
         <div className="nav">
           <Link to={`survey/1`} className="link">Identification par questions</Link>
           <Link to={`img-identification`} className="link">Identification par photo</Link>
+          <Link to={`/results`} className="link">Planisphère</Link>
         </div>
       </div>
     </div>
