@@ -37,7 +37,6 @@ function Results() {
 			<br />
 			<Link to={`/`}>Go to Home</Link>
 			<br />
-			{console.log(makeResults())}
 			<DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
 			{datas && <GreenGlobe datas={datas} />}
 		</div>
