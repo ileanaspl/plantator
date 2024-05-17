@@ -1,18 +1,19 @@
 .topSection {
-    height: 20dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 20dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  div {
     h1 {
-        color: var(--text-color);
+      color: var(--text-color);
+      text-align: center;
     }
-
-    .navLink {
-        display: flex;
-        justify-content: center;
-        margin-block: 1rem;
-    }
-
+  }
+  .navLink {
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem;
+  }
 }
