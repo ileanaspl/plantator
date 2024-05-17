@@ -61,10 +61,10 @@ export const surveyData = [
 	{
 		question: '6 - Combien de pétales possèdent chaque fleur ?',
 		reponseA: '4',
-		imageA: 'http://',
+		imageA: 'http://www.fr36.org/surveydatas/question6/fleur-4-petale.webp',
 		reponseB: '5',
-		imageB: 'http://',
+		imageB: 'http://www.fr36.org/surveydatas/question6/fleur-5-petale.webp',
 		reponseC: 'Supérieur à 15',
-		imageC: 'http://',
+		imageC: 'http://www.fr36.org/surveydatas/question6/fleur-15-petale.webp',
 	},
 ];
