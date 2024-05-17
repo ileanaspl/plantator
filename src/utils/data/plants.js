@@ -35,7 +35,7 @@ export const plantes = [
         lng: 79.13492152021523,
       },
     ],
-    labelcolor: "rgba(52, 46,55, 0.75)",
+    labelcolor: "rgba(0, 114, 0, 0.75)",
   },
   {
     id: 2,

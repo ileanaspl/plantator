@@ -38,10 +38,11 @@ function GreenGlobe({ datas }) {
     if (places.length > 0) {
       // Center the view on the specified coordinates
       const centerCoords = {
-        lat: places[0].coordonnees.lat,
-        lng: places[0].coordonnees.lng,
+        lat: places[1].coordonnees.lat,
+        lng: places[1].coordonnees.lng,
         altitude: 2,
       };
+      console.log(centerCoords);
       globe.pointOfView(centerCoords, 0);
     }
   }, [places]);
