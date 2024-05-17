@@ -3,6 +3,7 @@ import { surveyData } from '../utils/data/surveydatas.js';
 import { useContext } from 'react';
 import { SurveyContext } from '../utils/context/SurveyContext.jsx';
 import { div } from 'three/examples/jsm/nodes/Nodes.js';
+import './Survey.sass';
 
 function Survey() {
 	const { questionNumber } = useParams();
@@ -75,6 +76,15 @@ function Survey() {
 							<p>{surveyData[questionNumber - 1].reponseF}</p>
 							<br />
 							<img src={surveyData[questionNumber - 1].imageF} />
+						</Link>
+					</div>
+				)}
+				{surveyData[questionNumber - 1].reponseG && (
+					<div className="grandcontainer-a">
+						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseG)}>
+							<p>{surveyData[questionNumber - 1].reponseG}</p>
+							<br />
+							<img src={surveyData[questionNumber - 1].imageG} />
 						</Link>
 					</div>
 				)}
