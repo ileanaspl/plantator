@@ -12,8 +12,6 @@ function Results() {
   const { answers } = useContext(SurveyContext);
 
   useEffect(() => {
-    const resultSurvey = makeResults();
-    console.log(resultSurvey);
     const makeResults = () => {
       return plantes.filter(
         (obj) =>
@@ -25,6 +23,8 @@ function Results() {
           obj.fleur.petale === answers[6],
       );
     };
+    const resultSurvey = makeResults();
+    console.log(resultSurvey);
     resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
   }, []);
 
@@ -45,9 +45,7 @@ function Results() {
       <br />
       <Link to={`/`}>Go to Home</Link>
       <br />
-      {console.log(answers)}
-      {console.log(datas)}
-      {datas.length > 0 && (
+      {datas.length === 1 && (
         <button onClick={() => setSelectedPlants("")}>Voir toutes les plantes</button>
       )}
       <DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
