@@ -8,15 +8,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/anis-vert.webp",
     famille: "Apiacées",
     feuille: {
-      folioles: "Composées",
-      decoupe: "Dentées",
-      disposition: "Alternées",
+      folioles: "composées",
+      decoupe: "dentées",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Blanc",
-      disposition: "Ombelles",
-      petale: "Supérieur à 15",
+      couleur: "blanche",
+      disposition: "ombelles",
     },
 
     partieUtil: "Semences",
@@ -36,7 +35,7 @@ export const plantes = [
         lng: 79.13492152021523,
       },
     ],
-    labelcolor: "rgba(52, 46,55, 0.75)",
+    labelcolor: "rgba(0, 114, 0, 0.75)",
   },
   {
     id: 2,
@@ -47,14 +46,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/millepertuis-perfore.webp",
     famille: "Apiacées",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Lisses",
-      disposition: "Opposées",
+      folioles: "simples",
+      decoupe: "lisses",
+      disposition: "opposées",
     },
 
     fleur: {
-      couleur: "Jaune",
-      disposition: "Panicules",
+      couleur: "jaunes",
+      disposition: "panicules",
       petale: "5",
     },
     partieUtil: "Sommités fleuries",
@@ -86,14 +85,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/mauve-sylvestre.webp",
     famille: "Malvaceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Dentées",
-      disposition: "Verticillées",
+      folioles: "simples",
+      decoupe: "dentées",
+      disposition: "verticillées",
     },
 
     fleur: {
-      couleur: "Violet",
-      disposition: "Fascicules",
+      couleur: "violette",
+      disposition: "fascicules",
       petale: "5",
     },
     partieUtil: "Fleurs",
@@ -125,15 +124,15 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/chicoree-sauvage.webp",
     famille: "Asteraceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Dentées",
-      disposition: "Alternées",
+      folioles: "simples",
+      decoupe: "dentées",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Bleu",
-      disposition: "Panicules",
-      petale: "Supérieur à 15",
+      couleur: "bleues",
+      disposition: "panicules",
+      petale: "supérieur à 15",
     },
     partieUtil: "Racines",
     proprietes: "Choléretique et cholagogue, apéritive, prébiotique",
@@ -164,15 +163,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/achille-millefeuille.webp",
     famille: "Asteraceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Pennées",
-      disposition: "Alternées",
+      folioles: "simple",
+      decoupe: "pennées",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Blanc",
-      disposition: "Corymbes",
-      petale: "5",
+      couleur: "blanches",
+      disposition: "corymbes",
     },
 
     partieUtil: "Sommités fleuries",
@@ -193,7 +191,7 @@ export const plantes = [
         lng: -98.48060747644661,
       },
     ],
-    labelcolor: "rgba(0, 56,68, 0.75)",
+    labelcolor: "rgba(8, 189, 189, 0.75)",
   },
   {
     id: 6,
@@ -204,15 +202,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/grande-aunee.webp",
     famille: "Asteraceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Dentées",
-      disposition: "Alternées",
+      folioles: "simples",
+      decoupe: "dentées",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Jaune",
-      disposition: "Capitules",
-      petale: "Supérieur à 15",
+      couleur: "jaunes",
+      disposition: "capitules",
     },
 
     partieUtil: "Racine",
@@ -245,14 +242,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/epilobe-a-petites-fleurs.webp",
     famille: "Oenotheraceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Dentées",
-      disposition: "Opposées",
+      folioles: "simple",
+      decoupe: "dentées",
+      disposition: "opposées",
     },
 
     fleur: {
-      couleur: "Jaune",
-      disposition: "Capitules",
+      couleur: "jaunes",
+      disposition: "capitules",
       petale: "4",
     },
 
@@ -285,14 +282,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/pavot-de-californie.webp",
     famille: "Papaveraceae",
     feuille: {
-      folioles: "Composées",
-      decoupe: "Lisses",
-      disposition: "Alternées",
+      folioles: "composées",
+      decoupe: "lisses",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Orange",
-      disposition: "Isolées",
+      couleur: "oranges",
+      disposition: "isolées",
       petale: "4",
     },
     partieUtil: "Parties aériennes fleuries",
@@ -312,7 +309,7 @@ export const plantes = [
         lng: -1.0310700212915667,
       },
     ],
-    labelcolor: "rgba(255, 86,0, 0.75)",
+    labelcolor: "rgba(255, 100,0, 0.75)",
   },
   {
     id: 9,
@@ -323,15 +320,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/digitale-pourpre.webp",
     famille: "Scrophulariaceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Dentées",
-      disposition: "Alternées",
+      folioles: "simple",
+      decoupe: "dentées",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Rose",
-      disposition: "Grappes",
-      petale: "5",
+      couleur: "rose",
+      disposition: "grappes",
     },
     proprietes:
       "Plante extrêmement toxique ! Certains de ses principes actifs comme la dioxine sont utilisés à des dosages infimes dans des médicaments comme cardiotonique",
@@ -360,14 +356,14 @@ export const plantes = [
     img: "http://www.fr36.org/plantes/bourrache-officinale.webp",
     famille: "Boraginaceae",
     feuille: {
-      folioles: "Simples",
-      decoupe: "Poilues",
-      disposition: "Alternées",
+      folioles: "simple",
+      decoupe: "poilues",
+      disposition: "alternées",
     },
 
     fleur: {
-      couleur: "Bleu",
-      disposition: "Panicules",
+      couleur: "bleues",
+      disposition: "panicules",
       petale: "5",
     },
     partieUtil: "Graines (huile)",

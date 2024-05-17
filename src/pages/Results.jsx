@@ -10,27 +10,33 @@ function Results() {
   const [selectedPlants, setSelectedPlants] = useState("");
   const [datas, setDatas] = useState([]);
   const { answers } = useContext(SurveyContext);
+
+  useEffect(() => {
+    const resultSurvey = makeResults();
+    console.log(resultSurvey);
+    const makeResults = () => {
+      return plantes.filter(
+        (obj) =>
+          obj.feuille.folioles === answers[1] &&
+          obj.feuille.decoupe === answers[2] &&
+          obj.feuille.disposition === answers[3] &&
+          obj.fleur.couleur === answers[4] &&
+          obj.fleur.disposition === answers[5] &&
+          obj.fleur.petale === answers[6],
+      );
+    };
+    resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
+  }, []);
+
   const changePlants = () => {
     return plantes.filter((obj) =>
       selectedPlants !== "" ? obj.nom.vernaculaire === selectedPlants : obj,
     );
   };
-  useEffect(() => {
-    const resultSurvey = makeResults();
-    resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(changePlants());
-  }, [selectedPlants]);
 
-  const makeResults = () => {
-    return plantes.filter(
-      (obj) =>
-        obj.feuille.folioles === answers[1] &&
-        obj.feuille.decoupe === answers[2] &&
-        obj.feuille.disposition === answers[3] &&
-        obj.fleur.couleur === answers[4] &&
-        obj.fleur.disposition === answers[5] &&
-        obj.fleur.petale === answers[6],
-    );
-  };
+  useEffect(() => {
+    setDatas(changePlants());
+  }, [selectedPlants]);
 
   return (
     <div>
@@ -39,7 +45,11 @@ function Results() {
       <br />
       <Link to={`/`}>Go to Home</Link>
       <br />
-      {console.log(makeResults())}
+      {console.log(answers)}
+      {console.log(datas)}
+      {datas.length > 0 && (
+        <button onClick={() => setSelectedPlants("")}>Voir toutes les plantes</button>
+      )}
       <DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
       {datas && <GreenGlobe datas={datas} />}
     </div>
