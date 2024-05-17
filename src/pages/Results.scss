@@ -1,0 +1,11 @@
+.topSection {
+    height: 15dvh;
+    display: flex;
+    flex-direction: column;
+
+    .navLink {
+        display: flex;
+        justify-content: center;
+        margin-block: 1rem;
+    }
+}

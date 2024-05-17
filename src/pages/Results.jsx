@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { plantes } from '../utils/data/plants';
 import { useContext } from 'react';
 import { SurveyContext } from '../utils/context/SurveyContext';
+import "./Results.scss"
 
 function Results() {
 	const [selectedPlants, setSelectedPlants] = useState('');
@@ -13,6 +14,11 @@ function Results() {
 	// const changePlants = () => {
 	// 	return plantes.filter((obj) => (selectedPlants !== '' ? obj.nom.vernaculaire === selectedPlants : obj));
 	// };
+	useEffect(() => {
+		const resultSurvey = makeResults();
+		resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
+	}, [selectedPlants]);
+
 	const makeResults = () => {
 		return plantes.filter(
 			(obj) =>
@@ -24,20 +30,18 @@ function Results() {
 				obj.fleur.petale === answers[6],
 		);
 	};
-	useEffect(() => {
-		const resultSurvey = makeResults();
-		resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
-	}, [selectedPlants]);
-
 
 	return (
 		<div>
-			RESULTS
-			{datas && datas.map((plants) => <span key={plants.id}>{plants.nom.vernaculaire}</span>)}
-			<br />
-			<Link to={`/`}>Go to Home</Link>
-			<br />
-			{console.log(makeResults())}
+			<div className='topSection'>
+				<Link to={`/`} className='navLink'>Go to Home</Link>
+				<br />
+				RESULTS
+				<br />
+				{datas && datas.map((plants) => <span key={plants.id}>{plants.nom.vernaculaire}</span>)}
+				<h3>{plants.partieUtil}</h3>
+				{console.log(makeResults())}
+			</div>
 			<DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
 			{datas && <GreenGlobe datas={datas} />}
 		</div>

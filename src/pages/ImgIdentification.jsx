@@ -6,7 +6,7 @@ function ImgIdentification() {
     return (<>
         <div className="navBar">
             <Link to={"/"} className="navLink">Accueil</Link>
-            <Link to={"../survey/:questionNumber"} className="navLink">Identification par questionnaire</Link>
+            <Link to={"../survey/1"} className="navLink">Identification par questionnaire</Link>
         </div>
         <div className="identification">
             <div className="titres">
