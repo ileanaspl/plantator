@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Survey from "./pages/Survey.jsx";
 import Results from "./pages/Results.jsx";
 import { SurveyProvider } from "./utils/context/SurveyContext.jsx";
+import ImgIdentification from "./pages/ImgIdentification.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,8 @@ const router = createBrowserRouter([
   },
   { path: "/survey/:questionNumber", element: <Survey /> },
   { path: "/results", element: <Results /> },
+  { path: "img-identification", element: <ImgIdentification /> },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
