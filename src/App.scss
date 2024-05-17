@@ -10,6 +10,10 @@
   font-optical-sizing: auto;
 }
 
+.link:hover {
+  color: #8eb533;
+}
+
 .home {
   margin: 0 auto;
   width: 100dvw;
@@ -25,9 +29,35 @@
   background-size: cover;
   padding-top: 5dvh;
 
+  .mainContainer {
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .homeText {
+    max-width: 65ch;
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+
+    p {
+      color: var(--lighter-color);
+    }
+  }
+
+  h1 {
+    font-weight: 400;
+    margin-bottom: 5dvh;
+  }
+
   .nav {
+    padding-top: 2rem;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 }
