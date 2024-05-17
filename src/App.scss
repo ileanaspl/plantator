@@ -3,7 +3,7 @@
   --darker-colorTransparent: #242424c5;
   --lighter-color: #fff;
   --text-color: #8eb533;
-
+  box-sizing: border-box;
   width: 100dvw;
   font-family: "Urbanist", sans-serif;
   font-style: normal;
@@ -11,7 +11,7 @@
 }
 
 .link:hover {
-  color: #8eb533;
+  color: var(--text-color);
 }
 
 .home {
@@ -23,7 +23,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  color: #8eb533;
+  color: var(--text-color);
   background-image: url("./assets/textures/ayako-GZpKVHIEjy4-unsplash.png");
   background-position: center;
   background-size: cover;
@@ -63,7 +63,7 @@
 }
 
 .link {
-  border: 1px solid #8eb533;
+  border: 1px solid var(--text-color);
   border-radius: 6px;
   background-color: var(--darker-colorTransparent);
   color: var(--lighter-color);
