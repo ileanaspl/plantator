@@ -44,6 +44,9 @@ function Results() {
 	useEffect(() => {
 		setDatas(changePlants());
 	}, [selectedPlants]);
+	useEffect(() => {
+		setDatas(changePlants());
+	}, [selectedPlants]);
 
 	return (
 		<div>

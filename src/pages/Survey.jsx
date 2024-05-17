@@ -19,17 +19,8 @@ function Survey() {
 
 	return (
 		<div id="survey-div">
-			{console.log(answers)}
-			SURVEY page - {questionNumber}
 			<br />
-			<p>Question: {surveyData[questionNumber - 1].question}</p>
-			<br />
-			<br />
-			<br />
-			<Link to={`/results`}>Go to Results</Link>
-			<br />
-			<Link to={`/`}>Go to Home</Link>
-			<br />
+			<h3>Question: {surveyData[questionNumber - 1].question}</h3>
 			<div id="grandcontainer">
 				<div className="grandcontainer-a">
 					<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseA)}>
@@ -93,7 +84,7 @@ function Survey() {
 			</div>
 			<br />
 			<br />
-			<Link to={`/survey/${prevQuestionNumber}`}>
+			<Link to={`/survey/${prevQuestionNumber}`} id="prev-button">
 				<button onClick={saveReply}>Précédent</button>
 			</Link>
 		</div>
