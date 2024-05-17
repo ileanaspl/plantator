@@ -128,11 +128,14 @@ function GreenGlobe({ datas }) {
       />
 
       {hoveredLabel && (
-        <div className="hoverInfo" style={{
-          position: "absolute",
-          left: "70%",
-          top: "30%",
-        }}>
+        <div
+          className="hoverInfo"
+          style={{
+            position: "absolute",
+            left: "70%",
+            top: "30%",
+          }}
+        >
           <img
             src={hoveredLabel.img}
             alt={hoveredLabel.nom.vernaculaire}
@@ -148,16 +151,33 @@ function GreenGlobe({ datas }) {
             }}
           />
           <h3>{hoveredLabel.nom.vernaculaire}</h3>
-          <p><i>{hoveredLabel.nom.scientifique}</i></p>
-          <p style={{
-            maxWidth: "350px",
-          }}><b>Parties utilisées : </b>{hoveredLabel.partieUtil}</p>
-          <p style={{
-            maxWidth: "350px",
-          }}><b>Vertus : </b>{hoveredLabel.proprietes}</p>
-          <p style={{
-            maxWidth: "350px",
-          }}><b>Indications traditionnelles : </b>{hoveredLabel.indicationsTrad}</p>
+          <p>
+            <i>{hoveredLabel.nom.scientifique}</i>
+          </p>
+          <p
+            style={{
+              maxWidth: "350px",
+            }}
+          >
+            <b>Parties utilisées : </b>
+            {hoveredLabel.partieUtil}
+          </p>
+          <p
+            style={{
+              maxWidth: "350px",
+            }}
+          >
+            <b>Vertus : </b>
+            {hoveredLabel.proprietes}
+          </p>
+          <p
+            style={{
+              maxWidth: "350px",
+            }}
+          >
+            <b>Indications traditionnelles : </b>
+            {hoveredLabel.indicationsTrad}
+          </p>
         </div>
       )}
     </>
