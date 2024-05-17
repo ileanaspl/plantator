@@ -10,9 +10,7 @@ function Results() {
 	const [selectedPlants, setSelectedPlants] = useState('');
 	const [datas, setDatas] = useState([]);
 	const { answers } = useContext(SurveyContext);
-	const changePlants = () => {
-		return plantes.filter((obj) => (selectedPlants !== '' ? obj.nom.vernaculaire === selectedPlants : obj));
-	};
+
 	useEffect(() => {
 		const resultSurvey = makeResults();
 		resultSurvey.length > 0 ? setDatas(resultSurvey) : setDatas(plantes);
