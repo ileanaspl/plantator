@@ -62,7 +62,7 @@ function Results() {
             <h1>RÉSULTATS</h1>
             <h2>
               {winningPlant === "nowinner"
-                ? "Aucune plante ne correspond à vos critères"
+                ? "Aucune plante dans notre base de données ne correspond à vos critères"
                 : `La plante qui correspond à vos critères est la ${winningPlant} `}
             </h2>
           </div>

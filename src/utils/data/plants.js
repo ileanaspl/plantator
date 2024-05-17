@@ -5,7 +5,7 @@ export const plantes = [
       vernaculaire: "Anis vert",
       scientifique: "Pimpinella anisum",
     },
-    img: "http://www.fr36.org/plantes/anis-vert.webp",
+    img: "https://webdruid.fr/plantes/anis-vert.webp",
     famille: "Apiacées",
     feuille: {
       folioles: "Composées",
@@ -44,7 +44,7 @@ export const plantes = [
       vernaculaire: "Millepertuis perforé",
       scientifique: "Hypericum perforatum",
     },
-    img: "http://www.fr36.org/plantes/millepertuis-perfore.webp",
+    img: "https://webdruid.fr/plantes/millepertuis-perfore.webp",
     famille: "Apiacées",
     feuille: {
       folioles: "Simples",
@@ -83,7 +83,7 @@ export const plantes = [
       vernaculaire: "Mauve sylvestre",
       scientifique: "Malva sylvestris",
     },
-    img: "http://www.fr36.org/plantes/mauve-sylvestre.webp",
+    img: "https://webdruid.fr/plantes/mauve-sylvestre.webp",
     famille: "Malvaceae",
     feuille: {
       folioles: "Simples",
@@ -122,7 +122,7 @@ export const plantes = [
       vernaculaire: "Chicorée sauvage",
       scientifique: "Cichorium intybus",
     },
-    img: "http://www.fr36.org/plantes/chicoree-sauvage.webp",
+    img: "https://webdruid.fr/plantes/chicoree-sauvage.webp",
     famille: "Asteraceae",
     feuille: {
       folioles: "Simples",
@@ -161,7 +161,7 @@ export const plantes = [
       vernaculaire: "Achillée millefeuille",
       scientifique: "Achillea millefolium",
     },
-    img: "http://www.fr36.org/plantes/achille-millefeuille.webp",
+    img: "https://webdruid.fr/plantes/achille-millefeuille.webp",
     famille: "Asteraceae",
     feuille: {
       folioles: "Simples",
@@ -201,7 +201,7 @@ export const plantes = [
       vernaculaire: "Grande aunée",
       scientifique: "Inula helenium",
     },
-    img: "http://www.fr36.org/plantes/grande-aunee.webp",
+    img: "https://webdruid.fr/plantes/grande-aunee.webp",
     famille: "Asteraceae",
     feuille: {
       folioles: "Simples",
@@ -242,7 +242,7 @@ export const plantes = [
       vernaculaire: "Epilobe à petite fleur",
       scientifique: "Epilobium parviflorum",
     },
-    img: "http://www.fr36.org/plantes/epilobe-a-petites-fleurs.webp",
+    img: "https://webdruid.fr/plantes/epilobe-a-petites-fleurs.webp",
     famille: "Oenotheraceae",
     feuille: {
       folioles: "Simples",
@@ -282,7 +282,7 @@ export const plantes = [
       scientifique: "Eschscholzia californica",
     },
 
-    img: "http://www.fr36.org/plantes/pavot-de-californie.webp",
+    img: "https://webdruid.fr/plantes/pavot-de-californie.webp",
     famille: "Papaveraceae",
     feuille: {
       folioles: "Composées",
@@ -320,7 +320,7 @@ export const plantes = [
       vernaculaire: "Digitale pourpre",
       scientifique: "Digitalis purpurea",
     },
-    img: "http://www.fr36.org/plantes/digitale-pourpre.webp",
+    img: "https://webdruid.fr/plantes/digitale-pourpre.webp",
     famille: "Scrophulariaceae",
     feuille: {
       folioles: "Simples",
@@ -357,7 +357,7 @@ export const plantes = [
       vernaculaire: "Bourrache officinale",
       scientifique: "Borago officinalis",
     },
-    img: "http://www.fr36.org/plantes/bourrache-officinale.webp",
+    img: "https://webdruid.fr/plantes/bourrache-officinale.webp",
     famille: "Boraginaceae",
     feuille: {
       folioles: "Simples",
