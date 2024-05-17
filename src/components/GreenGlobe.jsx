@@ -1,7 +1,5 @@
 import Globe from "react-globe.gl";
 import { useEffect, useState } from "react";
-import { geoloc_city } from "../utils/data/geoloc_city";
-import { plantsLoc } from "../utils/data/plantsLoc.js";
 import { useRef } from "react";
 import * as THREE from "three";
 import cloud from "../assets/textures/clouds.png";
