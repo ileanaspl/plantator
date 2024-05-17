@@ -13,6 +13,8 @@ function DropdownSelectorPlants({ setSelectedPlants }) {
           setSelectedPlants(event.target.value);
         }}
       >
+        <option value={""}>filtrer par plante</option>
+
         <option value={[]}>Toutes les plantes</option>
         {plantes.map((plant) => (
           <option key={plant.id} value={plant.nom.vernaculaire}>
