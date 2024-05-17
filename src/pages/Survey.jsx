@@ -39,7 +39,7 @@ function Survey() {
 					</Link>
 				</div>
 				<div className="grandcontainer-a">
-					<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseB)}>
+					<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseB)} className="link">
 						<p>{surveyData[questionNumber - 1].reponseB}</p>
 						<br />
 						<img src={surveyData[questionNumber - 1].imageB} />
@@ -47,7 +47,7 @@ function Survey() {
 				</div>
 				{surveyData[questionNumber - 1].reponseC && (
 					<div className="grandcontainer-a">
-						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseC)}>
+						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseC)} className="link">
 							<p>{surveyData[questionNumber - 1].reponseC}</p>
 							<br />
 							<img src={surveyData[questionNumber - 1].imageC} />
@@ -56,7 +56,7 @@ function Survey() {
 				)}
 				{surveyData[questionNumber - 1].reponseD && (
 					<div className="grandcontainer-a">
-						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseD)}>
+						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseD)} className="link">
 							<p>{surveyData[questionNumber - 1].reponseD}</p>
 							<br />
 							<img src={surveyData[questionNumber - 1].imageD} />
@@ -65,7 +65,7 @@ function Survey() {
 				)}
 				{surveyData[questionNumber - 1].reponseE && (
 					<div className="grandcontainer-a">
-						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseE)}>
+						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseE)} className="link">
 							<p>{surveyData[questionNumber - 1].reponseE}</p>
 							<br />
 							<img src={surveyData[questionNumber - 1].imageE} />
@@ -74,7 +74,7 @@ function Survey() {
 				)}
 				{surveyData[questionNumber - 1].reponseF && (
 					<div className="grandcontainer-a">
-						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseF)}>
+						<Link to={nextPath} onClick={() => saveReply(surveyData[questionNumber - 1].reponseF)} className="link">
 							<p>{surveyData[questionNumber - 1].reponseF}</p>
 							<br />
 							<img src={surveyData[questionNumber - 1].imageF} />
