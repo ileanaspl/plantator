@@ -1,11 +1,18 @@
 .topSection {
-    height: 15dvh;
+    height: 20dvh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: var(--text-color);
+    }
 
     .navLink {
         display: flex;
         justify-content: center;
         margin-block: 1rem;
     }
+
 }
