@@ -50,18 +50,18 @@ function Results() {
 
   return (
     <div>
+      <div className="navBar">
+        <Link to={`/`} className="navLink">
+          Accueil
+        </Link>
+        <Link to={"../survey/1"} className="navLink">
+          Identification par questionnaire
+        </Link>
+        <Link to={`../img-identification`} className="navLink">
+          Identification par photo
+        </Link>
+      </div>
       <div className="topSection">
-        <div className="navBar">
-          <Link to={`/`} className="navLink">
-            Retour à l'accueil
-          </Link>
-          <Link to={"../survey/1"} className="navLink">
-            Identification par questionnaire
-          </Link>
-          <Link to={`../img-identification`} className="navLink">
-            Identification par photo
-          </Link>
-        </div>
         <br />
 
         <br />

@@ -24,7 +24,6 @@ function ImgIdentification() {
           <h1>Identifier une plante grâce à une image</h1>
           <h2>Vous souhaitez identifier une plante que vous avez prise en photo ?</h2>
         </div>
-        {console.log(apiKey)}
         <div className="cadre">
           <p>
             Cliquez sur le cadre ci-dessous ou glissez-y l'image en question pour procéder à
