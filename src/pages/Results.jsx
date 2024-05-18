@@ -51,9 +51,17 @@ function Results() {
   return (
     <div>
       <div className="topSection">
-        <Link to={`/`} className="navLink">
-          Retour à l'accueil
-        </Link>
+        <div className="navBar">
+          <Link to={`/`} className="navLink">
+            Retour à l'accueil
+          </Link>
+          <Link to={"../survey/1"} className="navLink">
+            Identification par questionnaire
+          </Link>
+          <Link to={`../img-identification`} className="navLink">
+            Identification par photo
+          </Link>
+        </div>
         <br />
 
         <br />
@@ -71,7 +79,7 @@ function Results() {
       </div>
       <DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
       {datas && <GreenGlobe datas={datas} />}
-    </div>
+    </div >
   );
 }
 

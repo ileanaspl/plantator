@@ -6,15 +6,17 @@
   padding: 8px;
   gap: 6px;
   border-radius: 12px;
+  margin-block: 0.5rem;
 
   &:hover {
     background-color: #213347;
   }
 
   .FiltreStyle {
-    background: none;
+    background: #1d2a38;
     border: none;
     text-align: right;
+
     &:focus {
       outline: none;
     }

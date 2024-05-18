@@ -5,29 +5,36 @@
 
 .navBar {
   margin: 0 auto;
-  width: 90dvw;
-  max-width: 65ch;
-  height: 10dvh;
+  width: 90%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   border-bottom: 1px solid var(--text-color);
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
+
+  @media screen and (min-width: 745px) {
+    gap: 2rem;
+  }
+
+
+  .navLink {
+    color: var(--ligher-color);
+    text-shadow: 0.5px 0.5px 0.5px var(--text-color);
+  }
+
+  .navLink:hover {
+    color: var(--text-color);
+  }
 }
 
-.navLink {
-  color: var(--ligher-color);
-  text-shadow: 0.5px 0.5px 0.5px var(--text-color);
-}
-
-.navLink:hover {
-  color: var(--text-color);
-}
 
 .identification {
   margin: 0 auto;
-  width: 90dvw;
+  width: 90%;
   max-width: 65ch;
   display: flex;
   flex-direction: column;
@@ -39,7 +46,7 @@
   .titres {
     display: flex;
     flex-direction: column;
-    height: 40dvh;
+    height: 40%;
     gap: 2rem;
   }
 
