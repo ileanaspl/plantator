@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useRef } from "react";
 import * as THREE from "three";
 import cloud from "../assets/textures/clouds.png";
-import { plantes } from "../utils/data/plants.js";
 
 function GreenGlobe({ datas }) {
   const [places, setPlaces] = useState([]);

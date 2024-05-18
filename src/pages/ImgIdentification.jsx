@@ -14,6 +14,10 @@ function ImgIdentification() {
         <Link to={"../survey/1"} className="navLink">
           Identification par questionnaire
         </Link>
+        <Link to={"../results"} className="navLink">
+          Voir la carte
+        </Link>
+
       </div>
       <div className="identification">
         <div className="titres">
