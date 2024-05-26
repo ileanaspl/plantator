@@ -334,7 +334,7 @@ export const plantes = [
       petale: "5",
     },
     proprietes:
-      "Plante extrêmement toxique ! Certains de ses principes actifs comme la dioxine sont utilisés à des dosages infimes dans des médicaments comme cardiotonique",
+      "Plante extrêmement toxique ! Ne pas consommer. Certains de ses principes actifs comme la dioxine sont utilisés à des dosages infimes dans des médicaments comme cardiotonique",
     coordonnees: [
       {
         lat: 42.23108338997669,
@@ -488,7 +488,7 @@ export const plantes = [
       petale: "0",
     },
     partieUtil: "Feuilles",
-    proprietes: "Antioxydant, améliore la circulation sanguine",
+    proprietes: "Antioxydant, améliore la circulation sanguine (tend à fluidifier le sang)",
     indicationsTrad: "En interne : troubles de la mémoire, circulation sanguine",
     coordonnees: [
       {
@@ -529,7 +529,7 @@ export const plantes = [
     partieUtil: "Fleurs",
     proprietes: "Antiseptique, calmante, antispasmodique",
     indicationsTrad:
-      "En interne : anxiété, troubles du sommeil. En externe : désinfection des plaies",
+      "En interne : anxiété, troubles du sommeil.",
     coordonnees: [
       {
         lat: 43.769562,
@@ -567,9 +567,9 @@ export const plantes = [
       petale: "0",
     },
     partieUtil: "Feuilles et racines",
-    proprietes: "Antihistaminique, diurétique, reminéralisante",
+    proprietes: "Diurétique, reminéralisante",
     indicationsTrad:
-      "En interne : allergies, anémie, troubles urinaires. En externe : douleurs articulaires",
+      "En interne : acidose de terrain, anémie (plante riche en fer, à consommer dans l'alimentation), troubles urinaires.",
     coordonnees: [
       {
         lat: 59.329323,
@@ -605,9 +605,10 @@ export const plantes = [
       petale: "2-lèvres",
     },
     partieUtil: "Feuilles",
-    proprietes: "Antioxydante, antiseptique, digestive",
+    proprietes: "emménagogue, antiseptique, digestive",
     indicationsTrad:
-      "En interne : troubles digestifs, transpiration excessive, bouffées de chaleur",
+      "En interne : troubles digestifs, transpiration excessive, bouffées de chaleur, dysménorrhées, aménorrhées",
+    contreIndications: "Cancer hormono-dépendant, maladie hormonale",
     coordonnees: [
       {
         lat: 45.764043,
@@ -646,7 +647,7 @@ export const plantes = [
     },
     partieUtil: "Feuilles et sommités fleuries",
     proprietes: "Stimulant, antispasmodique, cholérétique",
-    indicationsTrad: "En interne : troubles digestifs, fatigue, affections hépatiques",
+    indicationsTrad: "En interne : troubles digestifs, fatigue hépatique",
     coordonnees: [
       {
         lat: 43.604652,
@@ -684,9 +685,9 @@ export const plantes = [
       petale: "2-lèvres",
     },
     partieUtil: "Feuilles et sommités fleuries",
-    proprietes: "Antiseptique, antitussif, expectorant",
+    proprietes: "Antiseptique, antitussif, expectorant, stimulant de la fonction hépatique",
     indicationsTrad:
-      "En interne : toux, bronchites, infections respiratoires. En externe : désinfection des plaies",
+      "En interne : toux, encombrement et affections des voies respiratoires.",
     coordonnees: [
       {
         lat: 43.70313,
@@ -726,7 +727,7 @@ export const plantes = [
     partieUtil: "Feuilles",
     proprietes: "Digestive, antispasmodique, rafraîchissante",
     indicationsTrad:
-      "En interne : troubles digestifs, nausées, maux de tête. En externe : douleurs musculaires",
+      "En interne : troubles digestifs, nausées.",
     coordonnees: [
       {
         lat: 51.165691,
@@ -766,7 +767,7 @@ export const plantes = [
     partieUtil: "Fleurs",
     proprietes: "Anti-inflammatoire, cicatrisante, antiseptique",
     indicationsTrad:
-      "En interne : troubles digestifs, inflammations. En externe : cicatrisation des plaies, inflammations cutanées",
+      "En interne : troubles digestifs (legères inflammations intestinales, fatigue de la fonction hépatique). En externe : cicatrisation des plaies, inflammations cutanées",
     coordonnees: [
       {
         lat: 50.110922,
@@ -804,7 +805,7 @@ export const plantes = [
     partieUtil: "Feuilles",
     proprietes: "Stimulant, diurétique, antioxydant",
     indicationsTrad:
-      "En interne : fatigue, rétention d'eau, amélioration de la vigilance et de la concentration",
+      "En interne : fatigue, amélioration de la vigilance et de la concentration",
     coordonnees: [
       {
         lat: -23.55052,
@@ -842,8 +843,8 @@ export const plantes = [
       petale: "5",
     },
     partieUtil: "Écorce",
-    proprietes: "Antipyrétique, antipaludique, antispasmodique",
-    indicationsTrad: "En interne : fièvres, paludisme, troubles digestifs",
+    proprietes: "Antipyrétique, antispasmodique",
+    indicationsTrad: "En interne : fièvres, troubles digestifs",
     coordonnees: [
       {
         lat: -2.189412,
@@ -859,45 +860,6 @@ export const plantes = [
       },
     ],
     labelcolor: "rgba(128, 0, 0, 0.75)",
-  },
-
-  // Nouvelle plante 3 (Amérique du Sud)
-  {
-    id: 23,
-    nom: {
-      vernaculaire: "Guanabana",
-      scientifique: "Annona muricata",
-    },
-    img: "https://webdruid.fr/plantes/guanabana.webp",
-    famille: "Annonaceae",
-    feuille: {
-      folioles: "Simples",
-      decoupe: "Entières",
-      disposition: "Alternées",
-    },
-    fleur: {
-      couleur: "Jaune",
-      disposition: "Solitaire",
-      petale: "3",
-    },
-    partieUtil: "Feuilles et fruits",
-    proprietes: "Antioxydant, anti-inflammatoire, sédatif",
-    indicationsTrad: "En interne : troubles du sommeil, inflammations, infections",
-    coordonnees: [
-      {
-        lat: -4.2105,
-        lng: -69.9355,
-      },
-      {
-        lat: -3.71722,
-        lng: -38.5434,
-      },
-      {
-        lat: -22.9068,
-        lng: -43.1729,
-      },
-    ],
-    labelcolor: "rgba(34, 139, 34, 0.75)",
   },
 
   // Nouvelle plante 4 (Amérique du Sud)
@@ -1116,7 +1078,7 @@ export const plantes = [
     },
     partieUtil: "Fleurs",
     proprietes: "Antioxydant, antihypertenseur, diurétique",
-    indicationsTrad: "En interne : hypertension, troubles rénaux, apport en vitamine C",
+    indicationsTrad: "En interne : hypertension, inflammations système urinaire, apport en vitamine C",
     coordonnees: [
       {
         lat: 6.524379,

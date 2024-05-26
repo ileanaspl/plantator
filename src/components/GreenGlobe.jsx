@@ -133,6 +133,8 @@ function GreenGlobe({ datas }) {
           top: "30%",
           backgroundColor: "rgba(36, 36, 36, 0.673)",
           maxWidth: "350px",
+          maxHeight: "700px",
+          overflow: "scroll",
           paddingBottom: "1rem",
           borderRadius: "8px",
         }}>
@@ -162,6 +164,12 @@ function GreenGlobe({ datas }) {
             <p style={{
               maxWidth: "350px",
             }}><b>Indications traditionnelles : </b>{hoveredLabel.indicationsTrad}</p>
+            <hr style={{
+              marginBlock: "0.5rem",
+            }}></hr>
+            <p style={{
+              maxWidth: "350px",
+            }}><i>Les indications ci-dessus sont données à titre informatif et ne constituent en rien un conseil médical. Avant toute cueillette/utilisation/consommation de plantes, demandez conseil à votre pharmacien et votre médecin. Certaines plantes peuvent présenter des interactions avec des médicaments et/ou des contre-indications à leur utilisation.</i></p>
           </div>
         </div>
       )}
