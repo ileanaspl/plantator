@@ -73,6 +73,7 @@ function Results() {
                 ? "Aucune plante dans notre base de données ne correspond à vos critères"
                 : `La plante qui correspond à vos critères est la ${winningPlant} `}
             </h2>
+            <p><i>Ceci est un outil indicatif, vérifiez l'identification auprès d'un professionnel.</i></p>
           </div>
         )}
         {selectedPlants !== "" && <h3>Plante recherchée : {selectedPlants}</h3>}

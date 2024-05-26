@@ -31,6 +31,7 @@ function ImgIdentification() {
           </p>
           <ai-taxonomist apiKey={apiKey}></ai-taxonomist>
         </div>
+        <p><i>Ceci est un outil indicatif, vérifiez l'identification auprès d'un professionnel.</i></p>
       </div>
     </>
   );
