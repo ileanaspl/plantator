@@ -334,7 +334,7 @@ export const plantes = [
       petale: "5",
     },
     proprietes:
-      "Plante extrêmement toxique ! Certains de ses principes actifs comme la dioxine sont utilisés à des dosages infimes dans des médicaments comme cardiotonique",
+      "Plante extrêmement toxique ! Ne pas consommer. Certains de ses principes actifs comme la dioxine sont utilisés à des dosages infimes dans des médicaments comme cardiotonique",
     coordonnees: [
       {
         lat: 42.23108338997669,
@@ -390,5 +390,748 @@ export const plantes = [
       },
     ],
     labelcolor: "rgba(28, 0,247, 0.75)",
+  },
+  {
+    id: 11,
+    nom: {
+      vernaculaire: "Camomille romaine",
+      scientifique: "Chamaemelum nobile",
+    },
+    img: "https://webdruid.fr/plantes/camomille-romaine.webp",
+    famille: "Asteraceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Blanc et jaune",
+      disposition: "Capitules",
+      petale: "Supérieur à 15",
+    },
+    partieUtil: "Fleurs",
+    proprietes: "Antispasmodique, calmante, digestive",
+    indicationsTrad: "En infusion : troubles digestifs, nervosité, insomnies",
+    coordonnees: [
+      {
+        lat: 49.7560875173938,
+        lng: 6.64449368015369,
+      },
+      {
+        lat: 45.123456,
+        lng: 8.654321,
+      },
+      {
+        lat: 37.774929,
+        lng: -122.419416,
+      },
+    ],
+    labelcolor: "rgba(255, 255, 0, 0.75)",
+  },
+
+  // Nouvelle plante 2
+  {
+    id: 12,
+    nom: {
+      vernaculaire: "Valériane",
+      scientifique: "Valeriana officinalis",
+    },
+    img: "https://webdruid.fr/plantes/valeriane.webp",
+    famille: "Caprifoliaceae",
+    feuille: {
+      folioles: "Composées",
+      decoupe: "Dentées",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Blanc rosé",
+      disposition: "Corymbes",
+      petale: "5",
+    },
+    partieUtil: "Racine",
+    proprietes: "Sédative, anxiolytique",
+    indicationsTrad: "En interne : troubles du sommeil, nervosité",
+    coordonnees: [
+      {
+        lat: 52.520006,
+        lng: 13.404954,
+      },
+      {
+        lat: 41.902783,
+        lng: 12.496366,
+      },
+      {
+        lat: 34.052235,
+        lng: -118.243683,
+      },
+    ],
+    labelcolor: "rgba(144, 238, 144, 0.75)",
+  },
+
+  // Nouvelle plante 3
+  {
+    id: 13,
+    nom: {
+      vernaculaire: "Ginkgo biloba",
+      scientifique: "Ginkgo biloba",
+    },
+    img: "https://webdruid.fr/plantes/ginkgo-biloba.webp",
+    famille: "Ginkgoaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Lobées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Inconspicuous",
+      disposition: "Chatons",
+      petale: "0",
+    },
+    partieUtil: "Feuilles",
+    proprietes: "Antioxydant, améliore la circulation sanguine (tend à fluidifier le sang)",
+    indicationsTrad: "En interne : troubles de la mémoire, circulation sanguine",
+    coordonnees: [
+      {
+        lat: 35.689487,
+        lng: 139.691706,
+      },
+      {
+        lat: 48.856614,
+        lng: 2.352222,
+      },
+      {
+        lat: 40.712776,
+        lng: -74.005974,
+      },
+    ],
+    labelcolor: "rgba(255, 215, 0, 0.75)",
+  },
+
+  // Nouvelle plante 4
+  {
+    id: 14,
+    nom: {
+      vernaculaire: "Lavande vraie",
+      scientifique: "Lavandula angustifolia",
+    },
+    img: "https://webdruid.fr/plantes/lavande-vraie.webp",
+    famille: "Lamiaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Entières",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Violet",
+      disposition: "Épis",
+      petale: "5",
+    },
+    partieUtil: "Fleurs",
+    proprietes: "Antiseptique, calmante, antispasmodique",
+    indicationsTrad:
+      "En interne : anxiété, troubles du sommeil.",
+    coordonnees: [
+      {
+        lat: 43.769562,
+        lng: 11.255814,
+      },
+      {
+        lat: 37.98381,
+        lng: 23.727539,
+      },
+      {
+        lat: 51.507351,
+        lng: -0.127758,
+      },
+    ],
+    labelcolor: "rgba(138, 43, 226, 0.75)",
+  },
+
+  // Nouvelle plante 5
+  {
+    id: 15,
+    nom: {
+      vernaculaire: "Ortie dioïque",
+      scientifique: "Urtica dioica",
+    },
+    img: "https://webdruid.fr/plantes/ortie-dioique.webp",
+    famille: "Urticaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Vert",
+      disposition: "Grappes",
+      petale: "0",
+    },
+    partieUtil: "Feuilles et racines",
+    proprietes: "Diurétique, reminéralisante",
+    indicationsTrad:
+      "En interne : acidose de terrain, anémie (plante riche en fer, à consommer dans l'alimentation), troubles urinaires.",
+    coordonnees: [
+      {
+        lat: 59.329323,
+        lng: 18.068581,
+      },
+      {
+        lat: 50.110924,
+        lng: 8.682127,
+      },
+      {
+        lat: 40.416775,
+        lng: -3.70379,
+      },
+    ],
+    labelcolor: "rgba(0, 128, 0, 0.75)",
+  },
+  {
+    id: 16,
+    nom: {
+      vernaculaire: "Sauge officinale",
+      scientifique: "Salvia officinalis",
+    },
+    img: "https://webdruid.fr/plantes/sauge-officinale.webp",
+    famille: "Lamiaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Violet",
+      disposition: "Épis",
+      petale: "2-lèvres",
+    },
+    partieUtil: "Feuilles",
+    proprietes: "emménagogue, antiseptique, digestive",
+    indicationsTrad:
+      "En interne : troubles digestifs, transpiration excessive, bouffées de chaleur, dysménorrhées, aménorrhées",
+    contreIndications: "Cancer hormono-dépendant, maladie hormonale",
+    coordonnees: [
+      {
+        lat: 45.764043,
+        lng: 4.835659,
+      },
+      {
+        lat: 43.710173,
+        lng: 7.261953,
+      },
+      {
+        lat: 41.902782,
+        lng: 12.496365,
+      },
+    ],
+    labelcolor: "rgba(128, 0, 128, 0.75)",
+  },
+
+  // Nouvelle plante 7
+  {
+    id: 17,
+    nom: {
+      vernaculaire: "Romarin",
+      scientifique: "Rosmarinus officinalis",
+    },
+    img: "https://webdruid.fr/plantes/romarin.webp",
+    famille: "Lamiaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Entières",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Bleu pâle",
+      disposition: "Verticillées",
+      petale: "2-lèvres",
+    },
+    partieUtil: "Feuilles et sommités fleuries",
+    proprietes: "Stimulant, antispasmodique, cholérétique",
+    indicationsTrad: "En interne : troubles digestifs, fatigue hépatique",
+    coordonnees: [
+      {
+        lat: 43.604652,
+        lng: 1.444209,
+      },
+      {
+        lat: 40.416775,
+        lng: -3.70379,
+      },
+      {
+        lat: 37.98381,
+        lng: 23.727539,
+      },
+    ],
+    labelcolor: "rgba(0, 0, 255, 0.75)",
+  },
+
+  // Nouvelle plante 8
+  {
+    id: 18,
+    nom: {
+      vernaculaire: "Thym",
+      scientifique: "Thymus vulgaris",
+    },
+    img: "https://webdruid.fr/plantes/thym.webp",
+    famille: "Lamiaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Entières",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Rose pâle",
+      disposition: "Épis",
+      petale: "2-lèvres",
+    },
+    partieUtil: "Feuilles et sommités fleuries",
+    proprietes: "Antiseptique, antitussif, expectorant, stimulant de la fonction hépatique",
+    indicationsTrad:
+      "En interne : toux, encombrement et affections des voies respiratoires.",
+    coordonnees: [
+      {
+        lat: 43.70313,
+        lng: 7.26608,
+      },
+      {
+        lat: 45.466794,
+        lng: 9.190347,
+      },
+      {
+        lat: 41.385064,
+        lng: 2.173404,
+      },
+    ],
+    labelcolor: "rgba(34, 139, 34, 0.75)",
+  },
+
+  // Nouvelle plante 9
+  {
+    id: 19,
+    nom: {
+      vernaculaire: "Menthe poivrée",
+      scientifique: "Mentha × piperita",
+    },
+    img: "https://webdruid.fr/plantes/menthe-poivree.webp",
+    famille: "Lamiaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Violet",
+      disposition: "Épis",
+      petale: "5",
+    },
+    partieUtil: "Feuilles",
+    proprietes: "Digestive, antispasmodique, rafraîchissante",
+    indicationsTrad:
+      "En interne : troubles digestifs, nausées.",
+    coordonnees: [
+      {
+        lat: 51.165691,
+        lng: 10.451526,
+      },
+      {
+        lat: 48.856614,
+        lng: 2.352222,
+      },
+      {
+        lat: 41.87194,
+        lng: 12.56738,
+      },
+    ],
+    labelcolor: "rgba(0, 255, 127, 0.75)",
+  },
+
+  // Nouvelle plante 10
+  {
+    id: 20,
+    nom: {
+      vernaculaire: "Calendula",
+      scientifique: "Calendula officinalis",
+    },
+    img: "https://webdruid.fr/plantes/calendula.webp",
+    famille: "Asteraceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Entières",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Orange",
+      disposition: "Capitules",
+      petale: "Supérieur à 15",
+    },
+    partieUtil: "Fleurs",
+    proprietes: "Anti-inflammatoire, cicatrisante, antiseptique",
+    indicationsTrad:
+      "En interne : troubles digestifs (legères inflammations intestinales, fatigue de la fonction hépatique). En externe : cicatrisation des plaies, inflammations cutanées",
+    coordonnees: [
+      {
+        lat: 50.110922,
+        lng: 8.682127,
+      },
+      {
+        lat: 48.208174,
+        lng: 16.373819,
+      },
+      {
+        lat: 52.520007,
+        lng: 13.404954,
+      },
+    ],
+    labelcolor: "rgba(255, 140, 0, 0.75)",
+  },
+  {
+    id: 21,
+    nom: {
+      vernaculaire: "Yerba maté",
+      scientifique: "Ilex paraguariensis",
+    },
+    img: "https://webdruid.fr/plantes/yerba-mate.webp",
+    famille: "Aquifoliaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Dentées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Blanc",
+      disposition: "Axillaire",
+      petale: "4",
+    },
+    partieUtil: "Feuilles",
+    proprietes: "Stimulant, diurétique, antioxydant",
+    indicationsTrad:
+      "En interne : fatigue, amélioration de la vigilance et de la concentration",
+    coordonnees: [
+      {
+        lat: -23.55052,
+        lng: -46.633308,
+      },
+      {
+        lat: -25.26374,
+        lng: -57.575926,
+      },
+      {
+        lat: -34.611778,
+        lng: -58.417308,
+      },
+    ],
+    labelcolor: "rgba(50, 205, 50, 0.75)",
+  },
+
+  // Nouvelle plante 2 (Amérique du Sud)
+  {
+    id: 22,
+    nom: {
+      vernaculaire: "Quinquina",
+      scientifique: "Cinchona officinalis",
+    },
+    img: "https://webdruid.fr/plantes/quinquina.webp",
+    famille: "Rubiaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Entières",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Rose pâle",
+      disposition: "Panicules",
+      petale: "5",
+    },
+    partieUtil: "Écorce",
+    proprietes: "Antipyrétique, antispasmodique",
+    indicationsTrad: "En interne : fièvres, troubles digestifs",
+    coordonnees: [
+      {
+        lat: -2.189412,
+        lng: -79.890221,
+      },
+      {
+        lat: -13.53195,
+        lng: -71.967463,
+      },
+      {
+        lat: -16.409047,
+        lng: -71.537451,
+      },
+    ],
+    labelcolor: "rgba(128, 0, 0, 0.75)",
+  },
+
+  // Nouvelle plante 4 (Amérique du Sud)
+  {
+    id: 24,
+    nom: {
+      vernaculaire: "Palo santo",
+      scientifique: "Bursera graveolens",
+    },
+    img: "https://webdruid.fr/plantes/palo-santo.webp",
+    famille: "Burseraceae",
+    feuille: {
+      folioles: "Composées",
+      decoupe: "Entières",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Blanc",
+      disposition: "Panicules",
+      petale: "5",
+    },
+    partieUtil: "Bois",
+    proprietes: "Anti-inflammatoire, antiseptique, sédatif",
+    indicationsTrad:
+      "En interne : inflammations, infections. En externe : usage spirituel et aromathérapie",
+    coordonnees: [
+      {
+        lat: -1.831239,
+        lng: -78.183406,
+      },
+      {
+        lat: -2.203816,
+        lng: -80.9763,
+      },
+      {
+        lat: -4.033068,
+        lng: -79.201439,
+      },
+    ],
+    labelcolor: "rgba(210, 180, 140, 0.75)",
+  },
+
+  // Nouvelle plante 5 (Amérique du Sud)
+  {
+    id: 25,
+    nom: {
+      vernaculaire: "Acai",
+      scientifique: "Euterpe oleracea",
+    },
+    img: "https://webdruid.fr/plantes/acai.webp",
+    famille: "Arecaceae",
+    feuille: {
+      folioles: "Composées",
+      decoupe: "Pinnées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Blanc",
+      disposition: "Panicules",
+      petale: "3",
+    },
+    partieUtil: "Fruits",
+    proprietes: "Antioxydant, énergisant, immunostimulant",
+    indicationsTrad: "En interne : amélioration de l'énergie et de l'immunité, riche en nutriments",
+    coordonnees: [
+      {
+        lat: -1.455833,
+        lng: -48.503887,
+      },
+      {
+        lat: -2.53073,
+        lng: -44.3068,
+      },
+      {
+        lat: -1.361389,
+        lng: -48.4025,
+      },
+    ],
+    labelcolor: "rgba(123, 104, 238, 0.75)",
+  },
+  {
+    id: 26,
+    nom: {
+      vernaculaire: "Baobab",
+      scientifique: "Adansonia digitata",
+    },
+    img: "https://webdruid.fr/plantes/baobab.webp",
+    famille: "Malvaceae",
+    feuille: {
+      folioles: "Composées",
+      decoupe: "Palmées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Blanc",
+      disposition: "Solitaire",
+      petale: "5",
+    },
+    partieUtil: "Feuilles, fruits, graines",
+    proprietes: "Antioxydant, anti-inflammatoire, riche en vitamine C",
+    indicationsTrad: "En interne : renforcement du système immunitaire, inflammations, nutrition",
+    coordonnees: [
+      {
+        lat: -15.387526,
+        lng: 28.322817,
+      },
+      {
+        lat: -1.940278,
+        lng: 29.873888,
+      },
+      {
+        lat: -13.963177,
+        lng: 33.774119,
+      },
+    ],
+    labelcolor: "rgba(255, 140, 0, 0.75)",
+  },
+
+  // Nouvelle plante 2 (Afrique)
+  {
+    id: 27,
+    nom: {
+      vernaculaire: "Arbre à encens",
+      scientifique: "Boswellia sacra",
+    },
+    img: "https://webdruid.fr/plantes/arbre-encens.webp",
+    famille: "Burseraceae",
+    feuille: {
+      folioles: "Composées",
+      decoupe: "Dentées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Blanc",
+      disposition: "Panicules",
+      petale: "5",
+    },
+    partieUtil: "Résine",
+    proprietes: "Anti-inflammatoire, antiseptique, anxiolytique",
+    indicationsTrad:
+      "En interne : inflammations, infections. En externe : usage spirituel et aromathérapie",
+    coordonnees: [
+      {
+        lat: 9.145,
+        lng: 40.489673,
+      },
+      {
+        lat: 11.562108,
+        lng: 43.150924,
+      },
+      {
+        lat: 12.779369,
+        lng: 45.036152,
+      },
+    ],
+    labelcolor: "rgba(139, 69, 19, 0.75)",
+  },
+
+  // Nouvelle plante 3 (Afrique)
+  {
+    id: 28,
+    nom: {
+      vernaculaire: "Kigelia",
+      scientifique: "Kigelia africana",
+    },
+    img: "https://webdruid.fr/plantes/kigelia.webp",
+    famille: "Bignoniaceae",
+    feuille: {
+      folioles: "Composées",
+      decoupe: "Entières",
+      disposition: "Opposées",
+    },
+    fleur: {
+      couleur: "Rouge",
+      disposition: "Panicules",
+      petale: "5",
+    },
+    partieUtil: "Fruits, écorce",
+    proprietes: "Antibactérien, antifongique, anti-inflammatoire",
+    indicationsTrad: "En externe : affections cutanées, infections fongiques, inflammations",
+    coordonnees: [
+      {
+        lat: -1.286389,
+        lng: 36.817223,
+      },
+      {
+        lat: -6.792354,
+        lng: 39.208328,
+      },
+      {
+        lat: -17.857733,
+        lng: 31.03351,
+      },
+    ],
+    labelcolor: "rgba(220, 20, 60, 0.75)",
+  },
+
+  // Nouvelle plante 4 (Afrique)
+  {
+    id: 29,
+    nom: {
+      vernaculaire: "Hibiscus sabdariffa",
+      scientifique: "Hibiscus sabdariffa",
+    },
+    img: "https://webdruid.fr/plantes/hibiscus-sabdariffa.webp",
+    famille: "Malvaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Lobées",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Rouge",
+      disposition: "Solitaire",
+      petale: "5",
+    },
+    partieUtil: "Fleurs",
+    proprietes: "Antioxydant, antihypertenseur, diurétique",
+    indicationsTrad: "En interne : hypertension, inflammations système urinaire, apport en vitamine C",
+    coordonnees: [
+      {
+        lat: 6.524379,
+        lng: 3.379206,
+      },
+      {
+        lat: 12.971599,
+        lng: -8.082828,
+      },
+      {
+        lat: 7.946527,
+        lng: -1.023194,
+      },
+    ],
+    labelcolor: "rgba(255, 69, 0, 0.75)",
+  },
+
+  // Nouvelle plante 5 (Afrique)
+  {
+    id: 30,
+    nom: {
+      vernaculaire: "Griffonia simplicifolia",
+      scientifique: "Griffonia simplicifolia",
+    },
+    img: "https://webdruid.fr/plantes/griffonia-simplicifolia.webp",
+    famille: "Fabaceae",
+    feuille: {
+      folioles: "Simples",
+      decoupe: "Entières",
+      disposition: "Alternées",
+    },
+    fleur: {
+      couleur: "Vert",
+      disposition: "Grappe",
+      petale: "5",
+    },
+    partieUtil: "Graines",
+    proprietes: "Antidépresseur, anxiolytique, amélioration du sommeil",
+    indicationsTrad: "En interne : dépression légère, anxiété, troubles du sommeil",
+    coordonnees: [
+      {
+        lat: 5.603716,
+        lng: -0.186964,
+      },
+      {
+        lat: 7.946527,
+        lng: -1.023194,
+      },
+      {
+        lat: 9.082,
+        lng: 8.6753,
+      },
+    ],
+    labelcolor: "rgba(46, 139, 87, 0.75)",
   },
 ];

@@ -27,6 +27,9 @@ function ImgIdentification() {
 					<p>Cliquez sur le cadre ci-dessous ou glissez-y l'image en question pour procéder à l'identification.</p>
 					<ai-taxonomist apiKey={apiKey}></ai-taxonomist>
 				</div>
+				<p>
+					<i>Ceci est un outil indicatif, vérifiez l'identification auprès d'un professionnel.</i>
+				</p>
 			</div>
 		</>
 	);
