@@ -20,19 +20,17 @@ function Survey() {
 	return (
 		<>
 			<div className="navBar">
-				<Link to={"/"} className="navLink">
+				<Link to={'/'} className="navLink">
 					Accueil
 				</Link>
 				<Link to={`../img-identification`} className="navLink">
 					Identification par photo
 				</Link>
-				<Link to={"../results"} className="navLink">
+				<Link to={'../results'} className="navLink">
 					Voir la carte
 				</Link>
-
 			</div>
 			<div id="survey-div">
-
 				<br />
 				<h3>Question: {surveyData[questionNumber - 1].question}</h3>
 				<div id="grandcontainer">
@@ -96,9 +94,11 @@ function Survey() {
 						</div>
 					)}
 				</div>
-				<Link to={`/survey/${prevQuestionNumber}`} id="prev-button">
-					<button onClick={saveReply}>Précédent</button>
-				</Link>
+				{questionNumber > 1 && (
+					<Link to={`/survey/${prevQuestionNumber}`} id="prev-button">
+						<button onClick={saveReply}>Précédent</button>
+					</Link>
+				)}
 			</div>
 		</>
 	);
