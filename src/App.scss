@@ -39,7 +39,6 @@
   padding-bottom: 2rem;
 
   .mainContainer {
-    // height: 60dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +58,12 @@
   h1 {
     font-weight: 400;
     margin-block: 2rem;
+  }
+  h2 {
+    @media screen and (max-width: 520px) {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   .nav {

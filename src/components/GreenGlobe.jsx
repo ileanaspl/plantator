@@ -26,7 +26,13 @@ function GreenGlobe({ datas }) {
   }, [datas]);
 
   useEffect(() => {
+    const getResponsiveAltitude = () => {
+      const widthDevice = window.innerWidth;
+      return widthDevice < 760 ? 5 : 2;
+    };
+
     const globe = globeEl.current;
+
     // Auto-rotate
     globe.controls().autoRotate = true;
     globe.controls().autoRotateSpeed = -0.1;
@@ -37,14 +43,16 @@ function GreenGlobe({ datas }) {
       const centerCoords = {
         lat: places[1].coordonnees.lat,
         lng: places[1].coordonnees.lng,
-        altitude: 1.8,
+        altitude: getResponsiveAltitude(),
       };
-      globe.pointOfView(centerCoords, 0);
+      globe.pointOfView(centerCoords, 800);
     }
   }, [places]);
 
   useEffect(() => {
     const globe = globeEl.current;
+    // globe.scene().position.y = 150;
+
     // Add clouds sphere
     const CLOUDS_IMG_URL = cloud; // from https://github.com/turban/webgl-earth
     const CLOUDS_ALT = 0.005;
@@ -116,7 +124,7 @@ function GreenGlobe({ datas }) {
         labelDotRadius={(d) => 1}
         labelColor={(d) => d.labelcolor}
         labelResolution={2}
-        labelAltitude={(d) => d.id * 0.01}
+        labelAltitude={(d) => d.id * 0.005}
         onLabelHover={(label) => {
           handleLabelHover(label);
         }}
@@ -127,17 +135,20 @@ function GreenGlobe({ datas }) {
       />
 
       {hoveredLabel && (
-        <div className="hoverInfo" style={{
-          position: "absolute",
-          left: "70%",
-          top: "30%",
-          backgroundColor: "rgba(36, 36, 36, 0.673)",
-          maxWidth: "350px",
-          maxHeight: "700px",
-          overflow: "scroll",
-          paddingBottom: "1rem",
-          borderRadius: "8px",
-        }}>
+        <div
+          className="hoverInfo"
+          style={{
+            position: "absolute",
+            left: "70%",
+            top: "30%",
+            backgroundColor: "rgba(36, 36, 36, 0.673)",
+            maxWidth: "350px",
+            maxHeight: "700px",
+            overflow: "scroll",
+            paddingBottom: "1rem",
+            borderRadius: "8px",
+          }}
+        >
           <img
             src={hoveredLabel.img}
             alt={hoveredLabel.nom.vernaculaire}
@@ -150,26 +161,57 @@ function GreenGlobe({ datas }) {
               borderRadius: "8px 8px 0 0",
             }}
           />
-          <div style={{
-            paddingLeft: "1rem",
-          }}>
+          <div
+            style={{
+              paddingLeft: "1rem",
+            }}
+          >
             <h3>{hoveredLabel.nom.vernaculaire}</h3>
-            <p><i>{hoveredLabel.nom.scientifique}</i></p>
-            <p style={{
-              maxWidth: "350px",
-            }}><b>Parties utilisées : </b>{hoveredLabel.partieUtil}</p>
-            <p style={{
-              maxWidth: "350px",
-            }}><b>Vertus : </b>{hoveredLabel.proprietes}</p>
-            <p style={{
-              maxWidth: "350px",
-            }}><b>Indications traditionnelles : </b>{hoveredLabel.indicationsTrad}</p>
-            <hr style={{
-              marginBlock: "0.5rem",
-            }}></hr>
-            <p style={{
-              maxWidth: "350px",
-            }}><i>Les indications ci-dessus sont données à titre informatif et ne constituent en rien un conseil médical. Avant toute cueillette/utilisation/consommation de plantes, demandez conseil à votre pharmacien et votre médecin. Certaines plantes peuvent présenter des interactions avec des médicaments et/ou des contre-indications à leur utilisation.</i></p>
+            <p>
+              <i>{hoveredLabel.nom.scientifique}</i>
+            </p>
+            <p
+              style={{
+                maxWidth: "350px",
+              }}
+            >
+              <b>Parties utilisées : </b>
+              {hoveredLabel.partieUtil}
+            </p>
+            <p
+              style={{
+                maxWidth: "350px",
+              }}
+            >
+              <b>Vertus : </b>
+              {hoveredLabel.proprietes}
+            </p>
+            <p
+              style={{
+                maxWidth: "350px",
+              }}
+            >
+              <b>Indications traditionnelles : </b>
+              {hoveredLabel.indicationsTrad}
+            </p>
+            <hr
+              style={{
+                marginBlock: "0.5rem",
+              }}
+            ></hr>
+            <p
+              style={{
+                maxWidth: "350px",
+              }}
+            >
+              <i>
+                Les indications ci-dessus sont données à titre informatif et ne constituent en rien
+                un conseil médical. Avant toute cueillette/utilisation/consommation de plantes,
+                demandez conseil à votre pharmacien et votre médecin. Certaines plantes peuvent
+                présenter des interactions avec des médicaments et/ou des contre-indications à leur
+                utilisation.
+              </i>
+            </p>
           </div>
         </div>
       )}
