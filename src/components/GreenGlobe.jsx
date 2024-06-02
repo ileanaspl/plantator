@@ -30,6 +30,7 @@ function GreenGlobe({ datas }) {
       const widthDevice = window.innerWidth;
       return widthDevice < 760 ? 5 : 2;
     };
+    window.innerWidth < 760 && window.scrollTo({ top: 500, left: 0, behavior: "smooth" });
 
     const globe = globeEl.current;
 
