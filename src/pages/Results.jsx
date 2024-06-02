@@ -63,14 +63,12 @@ function Results() {
         </Link>
       </div>
       <div className="topSection">
-        <br />
-        <br />
         {datas.length >= 1 && answers[1] && winningPlant !== "" && (
           <div className="results">
             {" "}
-            <h1>RÉSULTAT</h1>
+            <h1>RÉSULTATS</h1>
             <button onClick={() => setShowResults(!showResults)}>
-              {showResults ? "Masquer le résultat" : "Afficher le résultat"}
+              {showResults ? "Masquer les résultats" : "Afficher les résultats"}
             </button>
             {showResults && (
               <>
