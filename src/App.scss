@@ -1,7 +1,7 @@
 #root {
   --darker-color: #242424;
   --darker-colorTransparent: rgba(36, 36, 36, 0.773);
-  --lighter-color: #fff;
+  --lighter-color: whitesmoke;
   --text-color: #8eb533;
   margin: 0 auto;
   box-sizing: border-box;
@@ -18,7 +18,10 @@
   }
 }
 
-
+#root {
+  background-color: #242424;
+  color: var(--lighter-color);
+}
 
 .home {
   width: 100%;
@@ -80,8 +83,6 @@
 
     &:hover {
       color: var(--text-color);
-
     }
   }
-
 }
