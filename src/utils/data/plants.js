@@ -528,8 +528,7 @@ export const plantes = [
     },
     partieUtil: "Fleurs",
     proprietes: "Antiseptique, calmante, antispasmodique",
-    indicationsTrad:
-      "En interne : anxiété, troubles du sommeil.",
+    indicationsTrad: "En interne : anxiété, troubles du sommeil.",
     coordonnees: [
       {
         lat: 43.769562,
@@ -686,8 +685,7 @@ export const plantes = [
     },
     partieUtil: "Feuilles et sommités fleuries",
     proprietes: "Antiseptique, antitussif, expectorant, stimulant de la fonction hépatique",
-    indicationsTrad:
-      "En interne : toux, encombrement et affections des voies respiratoires.",
+    indicationsTrad: "En interne : toux, encombrement et affections des voies respiratoires.",
     coordonnees: [
       {
         lat: 43.70313,
@@ -710,7 +708,7 @@ export const plantes = [
     id: 19,
     nom: {
       vernaculaire: "Menthe poivrée",
-      scientifique: "Mentha × piperita",
+      scientifique: "Mentha piperita",
     },
     img: "https://webdruid.fr/plantes/menthe-poivree.webp",
     famille: "Lamiaceae",
@@ -726,8 +724,7 @@ export const plantes = [
     },
     partieUtil: "Feuilles",
     proprietes: "Digestive, antispasmodique, rafraîchissante",
-    indicationsTrad:
-      "En interne : troubles digestifs, nausées.",
+    indicationsTrad: "En interne : troubles digestifs, nausées.",
     coordonnees: [
       {
         lat: 51.165691,
@@ -804,8 +801,7 @@ export const plantes = [
     },
     partieUtil: "Feuilles",
     proprietes: "Stimulant, diurétique, antioxydant",
-    indicationsTrad:
-      "En interne : fatigue, amélioration de la vigilance et de la concentration",
+    indicationsTrad: "En interne : fatigue, amélioration de la vigilance et de la concentration",
     coordonnees: [
       {
         lat: -23.55052,
@@ -1078,7 +1074,8 @@ export const plantes = [
     },
     partieUtil: "Fleurs",
     proprietes: "Antioxydant, antihypertenseur, diurétique",
-    indicationsTrad: "En interne : hypertension, inflammations système urinaire, apport en vitamine C",
+    indicationsTrad:
+      "En interne : hypertension, inflammations système urinaire, apport en vitamine C",
     coordonnees: [
       {
         lat: 6.524379,
