@@ -63,8 +63,6 @@ function Results() {
         </Link>
       </div>
       <div className="topSection">
-        <br />
-        <br />
         {datas.length >= 1 && answers[1] && winningPlant !== "" && (
           <div className="results">
             {" "}
