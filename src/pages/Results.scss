@@ -1,23 +1,45 @@
 .topSection {
-  height: 20%;
+  // height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: sticky;
+  top: 5dvh;
+  z-index: 1;
 
-  div {
+  @media screen and (max-width: 520px) {
+    flex-direction: column;
+    // height: 8rem;
+    top: 0dvh;
+    gap: 0.5rem;
+  }
+
+  .results {
+    @media screen and (max-width: 520px) {
+      font-size: 0.8rem;
+    }
     h1 {
       color: var(--text-color);
       text-align: center;
+      @media screen and (max-width: 520px) {
+        font-size: 1.8rem;
+      }
     }
 
     h2 {
       padding-inline: 1rem;
+      @media screen and (max-width: 520px) {
+        font-size: 0.8rem;
+      }
     }
 
     h3 {
       padding-inline: 1rem;
+      @media screen and (max-width: 520px) {
+        font-size: 0.8rem;
+      }
     }
 
     p {

@@ -6,21 +6,23 @@
 .navBar {
   margin: 0 auto;
   width: 90%;
-  height: 5rem;
+  height: 10dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--text-color);
   margin-bottom: 1rem;
   gap: 1rem;
-
+  // position: sticky;
+  // top: 0;
+  z-index: 1;
   @media screen and (min-width: 745px) {
     gap: 2rem;
   }
 
   @media screen and (max-width: 520px) {
     flex-direction: column;
-    height: 8rem;
+    height: 15dvh;
     gap: 0.5rem;
   }
 

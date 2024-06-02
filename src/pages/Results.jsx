@@ -8,6 +8,7 @@ import { SurveyContext } from "../utils/context/SurveyContext";
 import "./Results.scss";
 
 function Results() {
+  const [showResults, setShowResults] = useState(true);
   const [selectedPlants, setSelectedPlants] = useState("");
   const [winningPlant, setWinningPlant] = useState("");
   const [datas, setDatas] = useState([]);
@@ -63,24 +64,37 @@ function Results() {
       </div>
       <div className="topSection">
         <br />
-
         <br />
         {datas.length >= 1 && answers[1] && winningPlant !== "" && (
-          <div>
-            <h1>RÉSULTATS</h1>
-            <h2>
-              {winningPlant === "nowinner"
-                ? "Aucune plante dans notre base de données ne correspond à vos critères"
-                : `La plante qui correspond à vos critères est la ${winningPlant} `}
-            </h2>
-            <p><i>Ceci est un outil indicatif, vérifiez l'identification auprès d'un professionnel.</i></p>
+          <div className="results">
+            {" "}
+            <h1>RÉSULTAT</h1>
+            <button onClick={() => setShowResults(!showResults)}>
+              {showResults ? "Masquer le résultat" : "Afficher le résultat"}
+            </button>
+            {showResults && (
+              <>
+                <h2>
+                  {winningPlant === "nowinner"
+                    ? "Aucune plante dans notre base de données ne correspond à vos critères"
+                    : `La plante qui correspond à vos critères est la ${winningPlant} `}
+                </h2>
+                <p>
+                  <i>
+                    Ceci est un outil indicatif, vérifiez l'identification auprès d'un
+                    professionnel.
+                  </i>
+                </p>
+              </>
+            )}
           </div>
         )}
-        {selectedPlants !== "" && <h3>Plante recherchée : {selectedPlants}</h3>}
+        {selectedPlants !== "" && <h3>Plante recherchée : {selectedPlants}</h3>}{" "}
+        <DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
       </div>
-      <DropdownSelectorPlants setSelectedPlants={setSelectedPlants} />
+
       {datas && <GreenGlobe datas={datas} />}
-    </div >
+    </div>
   );
 }
 
