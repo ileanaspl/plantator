@@ -68,7 +68,7 @@ function Results() {
             {" "}
             <h1>RÉSULTATS</h1>
             <button onClick={() => setShowResults(!showResults)}>
-              {showResults ? "Masquer les résultat" : "Afficher les résultat"}
+              {showResults ? "Masquer les résultats" : "Afficher les résultats"}
             </button>
             {showResults && (
               <>
